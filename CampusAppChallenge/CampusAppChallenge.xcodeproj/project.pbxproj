@@ -20,6 +20,9 @@
 		8849DCF7200A72A600B94987 /* StateListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DCF6200A72A600B94987 /* StateListener.swift */; };
 		8849DCF9200A764F00B94987 /* MapListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DCF8200A764F00B94987 /* MapListener.swift */; };
 		B54C5AC8200A5C580053D97D /* USOSApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54C5AC7200A5C580053D97D /* USOSApiHandler.swift */; };
+		B5818322200A8E4800CAA58C /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5818321200A8E4800CAA58C /* Schedule.swift */; };
+		B5818324200A8E4E00CAA58C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5818323200A8E4E00CAA58C /* Event.swift */; };
+		B5818326200A8F6500CAA58C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5818325200A8F6500CAA58C /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		8849DCF6200A72A600B94987 /* StateListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateListener.swift; path = CampusAppChallenge/Controllers/StateListener.swift; sourceTree = SOURCE_ROOT; };
 		8849DCF8200A764F00B94987 /* MapListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapListener.swift; path = CampusAppChallenge/Controllers/MapListener.swift; sourceTree = SOURCE_ROOT; };
 		B54C5AC7200A5C580053D97D /* USOSApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = USOSApiHandler.swift; path = "CampusAppChallenge/Controllers/Rafał dzban/USOSApiHandler.swift"; sourceTree = SOURCE_ROOT; };
+		B5818321200A8E4800CAA58C /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		B5818323200A8E4E00CAA58C /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		B5818325200A8F6500CAA58C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C8830DA0CA6DB79E4E2FCFE3 /* Pods-CampusAppChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAppChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAppChallenge/Pods-CampusAppChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +147,8 @@
 				B54C5AC7200A5C580053D97D /* USOSApiHandler.swift */,
 				8849DCF6200A72A600B94987 /* StateListener.swift */,
 				8849DCF8200A764F00B94987 /* MapListener.swift */,
+				B5818321200A8E4800CAA58C /* Schedule.swift */,
+				B5818323200A8E4E00CAA58C /* Event.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				8849DCF2200A426A00B94987 /* Values.swift */,
+				B5818325200A8F6500CAA58C /* Extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -375,10 +384,13 @@
 				8849DCF9200A764F00B94987 /* MapListener.swift in Sources */,
 				8849DCF7200A72A600B94987 /* StateListener.swift in Sources */,
 				8849DCEB200A3D7400B94987 /* TabBarController.swift in Sources */,
+				B5818322200A8E4800CAA58C /* Schedule.swift in Sources */,
+				B5818324200A8E4E00CAA58C /* Event.swift in Sources */,
 				8849DCED200A3DA500B94987 /* VirtualDeskViewController.swift in Sources */,
 				8849DCC4200A2A6800B94987 /* AppDelegate.swift in Sources */,
 				B54C5AC8200A5C580053D97D /* USOSApiHandler.swift in Sources */,
 				8849DCF3200A426A00B94987 /* Values.swift in Sources */,
+				B5818326200A8F6500CAA58C /* Extensions.swift in Sources */,
 				8849DCF5200A704A00B94987 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
