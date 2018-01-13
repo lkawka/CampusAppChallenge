@@ -1,0 +1,15 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "40de744576ef38f024715636a3f4b659"
+build_time: [1515871311, 415141000]
+inputs:
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/MapListener.swift": !dirty [1515869736, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/StateListener.swift": !dirty [1515869736, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/TabBarController.swift": !dirty [1515869736, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Models/Schedule.swift": !dirty [1515870498, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Models/Event.swift": !dirty [1515870498, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/VirtualDeskViewController.swift": !dirty [1515869736, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/App Delegate/AppDelegate.swift": !dirty [1515869736, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/Rafa\u0142\_dzban/USOSApiHandler.swift": !dirty [1515869736, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Common/Values.swift": !dirty [1515869736, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Common/Extensions.swift": !dirty [1515871306, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/HomeViewController.swift": !dirty [1515871298, 0]
