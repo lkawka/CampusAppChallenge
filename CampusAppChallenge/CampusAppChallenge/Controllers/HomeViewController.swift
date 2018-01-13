@@ -19,6 +19,9 @@ class HomeViewController: UIViewController {
     
     let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor0)
     
+    let positionListener = PositionListener()
+    let stateListener = StateListener()
+    
     //MARK: Life Cycle
 
     override func viewDidLoad() {
@@ -27,8 +30,11 @@ class HomeViewController: UIViewController {
         setupCenterLocationButton()
         setupMapView()
         
-        let listener = PositionListener()
-        IndoorwayLocationSdk.instance().position.onChange.addListener(listener: listener)
+        positionListener.mapView = mapView
+        IndoorwayLocationSdk.instance().position.onChange.addListener(listener: positionListener)
+        
+        stateListener.mapView = mapView
+        IndoorwayLocationSdk.instance().state.onChange.addListener(listener: stateListener)
         
     }
     
@@ -68,6 +74,22 @@ class HomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //MARK: - Button actions
+    
+    @IBAction func centerLocationButtonTapped(_ sender: Any) {
+        mapView.centerAtUserPosition = true
+        mapView.centerAtUserPosition = false
+        
+        /*if let room = Value.room[213] {
+            mapView.navigate(toObjectWithId: room)
+        }*/
+        
+        for annotation in mapView.annotations {
+            print("\(annotation.title), \(annotation.subtitle), \(annotation.description)")
+        }
+    }
+    
 }
 
 //MARK: - Indoorway Map Delegate
@@ -93,9 +115,11 @@ class PositionListener: IndoorwayPositionListener {
     var mapView: IndoorwayMapView?
     
     func positionChanged(position: IndoorwayLocation) {
+        
+        //Change map according to the floor you are on
         if let mapView = mapView {
             if mapView.loadedMap?.mapUuid != position.mapUuid {
-                let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor0)
+                let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: position.mapUuid!)
                 
                 mapView.loadMap(with: mapDescription) { [weak self] (completed) in
                     mapView.showsUserLocation = completed // To start displaying location if map is properly loaded

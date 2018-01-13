@@ -21,7 +21,7 @@ class VirtualDeskViewController: UIViewController {
     
     var mapView: IndoorwayMapView!
     
-    let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor2)
+    let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor1)
     
     let listener = StateListener()
 
@@ -63,7 +63,7 @@ class VirtualDeskViewController: UIViewController {
         
         mapView.delegate = self
         mapView.centerAtUserPosition = false
-        mapView.rotateWithUserHeading = true
+        mapView.rotateWithUserHeading = false
         
         mapView.loadMap(with: mapDescription) { [weak self] (completed) in
             self?.mapView.showsUserLocation = completed // To start displaying location if map is properly loaded
