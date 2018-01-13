@@ -21,7 +21,7 @@ class VirtualDeskViewController: UIViewController {
     
     var mapView: IndoorwayMapView!
     
-    let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor1)
+    let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor2)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,7 @@ class VirtualDeskViewController: UIViewController {
         mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
         mapView.delegate = self
-        mapView.centerAtUserPosition = true
+        mapView.centerAtUserPosition = false
         mapView.rotateWithUserHeading = true
         
         
