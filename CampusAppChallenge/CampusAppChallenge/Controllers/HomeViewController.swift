@@ -28,23 +28,41 @@ class HomeViewController: UIViewController {
     let positionListener = PositionListener()
     let stateListener = StateListener()
     
+    var event: Event? {
+        didSet {
+            if let event = event {
+                headerView.isHidden = false
+                
+                //timeLabel.text = event.startTime
+            } else {
+                headerView.isHidden = true
+            }
+        }
+    }
+    
     //MARK: Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupHeaderView()
         setupCenterLocationButton()
         setupMapView()
         
-        positionListener.mapView = mapView
-        IndoorwayLocationSdk.instance().position.onChange.addListener(listener: positionListener)
+        setupListeners()
         
-        stateListener.mapView = mapView
-        IndoorwayLocationSdk.instance().state.onChange.addListener(listener: stateListener)
-        
+        event = Schedule().events[0]
     }
     
     //MARK: - Setup
+    
+    private func setupHeaderView() {
+        if let event = event {
+            headerView.isHidden = false
+        } else {
+            headerView.isHidden = true
+        }
+    }
     
     private func setupCenterLocationButton() {
         centerLocationButton.layer.cornerRadius = centerLocationButton.bounds.size.width/2
@@ -69,6 +87,14 @@ class HomeViewController: UIViewController {
         mapView.loadMap(with: mapDescription) { [weak self] (completed) in
             self?.mapView.showsUserLocation = completed // To start displaying location if map is properly loaded
         }
+    }
+    
+    private func setupListeners() {
+        positionListener.mapView = mapView
+        IndoorwayLocationSdk.instance().position.onChange.addListener(listener: positionListener)
+        
+        stateListener.mapView = mapView
+        IndoorwayLocationSdk.instance().state.onChange.addListener(listener: stateListener)
     }
     
     /*

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		429D81ACB847239CB549192E /* Pods_CampusAppChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5935ADCF0CCD0B9F11787B02 /* Pods_CampusAppChallenge.framework */; };
+		5FE69026200AA231007AA46F /* FindMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE69025200AA230007AA46F /* FindMe.storyboard */; };
 		8849DCC4200A2A6800B94987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DCC3200A2A6800B94987 /* AppDelegate.swift */; };
 		8849DCC9200A2A6800B94987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8849DCC7200A2A6800B94987 /* Main.storyboard */; };
 		8849DCCE200A2A6800B94987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8849DCCD200A2A6800B94987 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		2D7455B425CAC9E221C3E297 /* Pods-CampusAppChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAppChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAppChallenge/Pods-CampusAppChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		5935ADCF0CCD0B9F11787B02 /* Pods_CampusAppChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusAppChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE69025200AA230007AA46F /* FindMe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindMe.storyboard; sourceTree = "<group>"; };
 		8849DCC0200A2A6700B94987 /* CampusAppChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusAppChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8849DCC3200A2A6800B94987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8849DCC8200A2A6800B94987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				8849DCC7200A2A6800B94987 /* Main.storyboard */,
+				5FE69025200AA230007AA46F /* FindMe.storyboard */,
 				8849DCCF200A2A6800B94987 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -300,6 +303,7 @@
 				8849DCD1200A2A6800B94987 /* LaunchScreen.storyboard in Resources */,
 				8849DCCE200A2A6800B94987 /* Assets.xcassets in Resources */,
 				8849DCC9200A2A6800B94987 /* Main.storyboard in Resources */,
+				5FE69026200AA231007AA46F /* FindMe.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
