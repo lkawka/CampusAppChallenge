@@ -1,0 +1,21 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "de6335f213cf847446049b17dd1bfecd"
+build_time: [1515860043, 444010000]
+inputs:
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/AFError.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/Alamofire.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/MultipartFormData.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/Notifications.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/ParameterEncoding.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/Request.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/Response.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/ResponseSerialization.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/Result.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/ServerTrustPolicy.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/SessionDelegate.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/SessionManager.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/TaskDelegate.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/Timeline.swift": [1515847466, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/Validation.swift": [1515847466, 0]

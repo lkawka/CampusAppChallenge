@@ -1,0 +1,9 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "6af1099af5216ac62dc8e63928ed483e"
+build_time: [1515860207, 996265000]
+inputs:
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/TabBarController.swift": [1515851948, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/VirtualDeskViewController.swift": [1515860207, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/App Delegate/AppDelegate.swift": [1515857737, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/Rafa\u0142\_dzban/USOSApiHandler.swift": [1515857221, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Common/Values.swift": [1515857684, 0]

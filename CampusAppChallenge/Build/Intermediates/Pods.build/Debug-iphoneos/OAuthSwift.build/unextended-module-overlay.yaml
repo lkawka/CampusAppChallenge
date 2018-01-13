@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/OAuthSwift/OAuthSwift.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphoneos/OAuthSwift.build/unextended-module.modulemap',
+    }]
+  }]
+}
