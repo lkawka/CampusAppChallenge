@@ -16,4 +16,6 @@ class Value {
     static let mapUuidFloor0 = "7-QLYjkafkE"
     static let mapUuidFloor1 = "gVI7XXuBFCQ"
     static let mapUuidFloor2 = "3-_M01M3r5w"
+    
+    static let room = [211: "3-_M01M3r5w_36a38", 212: "3-_M01M3r5w_76b29", 213: "3-_M01M3r5w_fe9c8", 214: "3-_M01M3r5w_c1a68"]
 }
