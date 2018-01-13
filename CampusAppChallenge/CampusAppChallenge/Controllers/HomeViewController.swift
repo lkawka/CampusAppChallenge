@@ -14,6 +14,12 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var centerLocationButton: UIButton!
     
+    @IBOutlet weak var headerView: UIView!
+    
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var classNameLabel: UILabel!
+    @IBOutlet weak var roomNumberLabel: UILabel!
+    @IBOutlet weak var navigateButton: UIButton!
     
     var mapView: IndoorwayMapView!
     
@@ -80,15 +86,14 @@ class HomeViewController: UIViewController {
     @IBAction func centerLocationButtonTapped(_ sender: Any) {
         mapView.centerAtUserPosition = true
         mapView.centerAtUserPosition = false
-        
-        /*if let room = Value.room[213] {
+    }
+    
+    @IBAction func navigateButtonTapped(_ sender: Any) {
+        if let room = Value.room[213] {
             mapView.navigate(toObjectWithId: room)
-        }*/
-        
-        for annotation in mapView.annotations {
-            print("\(annotation.title), \(annotation.subtitle), \(annotation.description)")
         }
     }
+    
     
 }
 
@@ -103,12 +108,12 @@ extension HomeViewController: IndoorwayMapViewDelegate {
         print("Map view did fail loading map with error: \(error.localizedDescription)")
     }
     
-    func mapView(_ mapView: IndoorwayMapView, didSelectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
+    /*func mapView(_ mapView: IndoorwayMapView, didSelectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
         print("User did select indoor object with identifier: \(indoorObjectInfo.objectId)")
     }
     func mapView(_ mapView: IndoorwayMapView, didDeselectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
         print("User did deselect indoor object with identifier: \(indoorObjectInfo.objectId)")
-    }
+    }*/
 }
 
 class PositionListener: IndoorwayPositionListener {
