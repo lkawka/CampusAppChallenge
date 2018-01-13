@@ -1,5 +1,5 @@
 //
-//  VirtualDeskViewController.swift
+//  HomeViewController.swift
 //  CampusAppChallenge
 //
 //  Created by Lukasz Kawka on 13/01/2018.
@@ -9,52 +9,41 @@
 import UIKit
 import IndoorwaySdk
 
-class VirtualDeskViewController: UIViewController {
+class HomeViewController: UIViewController {
     //MARK: - Properties
     
-    /*let visitor = IndoorwayVisitorEntry(name: "John",
-                                        email: "john@appleseed.com",
-                                        age: nil,
-                                        sex: nil,
-                                        groupUuid: nil,
-                                        sharedLocation: nil)*/
+    @IBOutlet weak var centerLocationButton: UIButton!
+    
     
     var mapView: IndoorwayMapView!
     
-    let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor2)
+    let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor0)
     
-    let listener = StateListener()
+    //MARK: Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupMap()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        listener.mapView = mapView
-        IndoorwayLocationSdk.instance().state.onChange.addListener(listener: listener)
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        
-        IndoorwayLocationSdk.instance().state.onChange.removeListener(listener: listener)
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        setupCenterLocationButton()
+        setupMapView()
+        
+        let listener = PositionListener()
+        IndoorwayLocationSdk.instance().position.onChange.addListener(listener: listener)
+        
     }
     
     //MARK: - Setup
     
-    private func setupMap() {
+    private func setupCenterLocationButton() {
+        centerLocationButton.layer.cornerRadius = centerLocationButton.bounds.size.width/2
+        
+    }
+    
+    private func setupMapView() {
         mapView = IndoorwayMapView()
         mapView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(mapView)
+        view.sendSubview(toBack: mapView)
         
         mapView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
@@ -63,13 +52,13 @@ class VirtualDeskViewController: UIViewController {
         
         mapView.delegate = self
         mapView.centerAtUserPosition = false
-        mapView.rotateWithUserHeading = true
+        mapView.rotateWithUserHeading = false
         
         mapView.loadMap(with: mapDescription) { [weak self] (completed) in
             self?.mapView.showsUserLocation = completed // To start displaying location if map is properly loaded
         }
     }
-
+    
     /*
     // MARK: - Navigation
 
@@ -83,7 +72,7 @@ class VirtualDeskViewController: UIViewController {
 
 //MARK: - Indoorway Map Delegate
 
-extension VirtualDeskViewController: IndoorwayMapViewDelegate {
+extension HomeViewController: IndoorwayMapViewDelegate {
     // Map loading
     func mapViewDidFinishLoadingMap(_ mapView: IndoorwayMapView) {
         print("Map view did finish loading")
@@ -100,8 +89,19 @@ extension VirtualDeskViewController: IndoorwayMapViewDelegate {
     }
 }
 
-//MARK: - State listener
-
-
+class PositionListener: IndoorwayPositionListener {
+    var mapView: IndoorwayMapView?
     
-
+    func positionChanged(position: IndoorwayLocation) {
+        if let mapView = mapView {
+            if mapView.loadedMap?.mapUuid != position.mapUuid {
+                let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor0)
+                
+                mapView.loadMap(with: mapDescription) { [weak self] (completed) in
+                    mapView.showsUserLocation = completed // To start displaying location if map is properly loaded
+                }
+            }
+        }
+    }
+    
+}

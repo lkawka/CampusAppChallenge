@@ -26,21 +26,39 @@
             </objects>
             <point key="canvasLocation" x="2260" y="537.48125937031489"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="3gU-u9-YAS">
             <objects>
-                <viewController id="ykn-dj-hJS" sceneMemberID="viewController">
+                <viewController id="ykn-dj-hJS" customClass="HomeViewController" customModule="CampusAppChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ulL-cl-ovH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLd-YO-YeF">
+                                <rect key="frame" x="296" y="531" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fNF-A8-cW0"/>
+                                    <constraint firstAttribute="width" constant="50" id="ydw-9d-MYo"/>
+                                </constraints>
+                                <state key="normal" title="Center"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B7I-1K-fWB" firstAttribute="bottom" secondItem="pLd-YO-YeF" secondAttribute="bottom" constant="37" id="6BW-3q-qSh"/>
+                            <constraint firstItem="B7I-1K-fWB" firstAttribute="trailing" secondItem="pLd-YO-YeF" secondAttribute="trailing" constant="29" id="ufS-g9-hlp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="B7I-1K-fWB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="j7w-cw-NOt"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="j7w-cw-NOt"/>
+                    <connections>
+                        <outlet property="centerLocationButton" destination="pLd-YO-YeF" id="stL-oX-m19"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ykN-E3-dgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="-249"/>
+            <point key="canvasLocation" x="2260" y="-249.62518740629687"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="B0o-KM-tjQ">
