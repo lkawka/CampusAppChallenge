@@ -28,6 +28,16 @@ class HomeViewController: UIViewController {
     let positionListener = PositionListener()
     let stateListener = StateListener()
     
+    var event: Event? {
+        didSet {
+            if let event = event {
+                
+                
+                headerView.isHidden = false
+            }
+        }
+    }
+    
     //MARK: Life Cycle
 
     override func viewDidLoad() {
@@ -45,6 +55,12 @@ class HomeViewController: UIViewController {
     }
     
     //MARK: - Setup
+    
+    private func setupHeaderView() {
+        if event == nil {
+            
+        }
+    }
     
     private func setupCenterLocationButton() {
         centerLocationButton.layer.cornerRadius = centerLocationButton.bounds.size.width/2
