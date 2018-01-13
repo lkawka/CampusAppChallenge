@@ -17,14 +17,28 @@
                     <view key="view" contentMode="scaleToFill" id="B2T-4g-KbM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVN-6E-WdN">
+                                <rect key="frame" x="112" y="72" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="26z-de-Jh5" eventType="touchUpInside" id="Cuv-eo-vsm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qVN-6E-WdN" firstAttribute="leading" secondItem="WcF-Gc-hcP" secondAttribute="leading" constant="112" id="BOV-ME-ZTj"/>
+                            <constraint firstItem="qVN-6E-WdN" firstAttribute="top" secondItem="WcF-Gc-hcP" secondAttribute="top" constant="52" id="dRa-2o-x4N"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WcF-Gc-hcP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Virtual Desk" id="gLE-xU-22B"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Je8-HR-jq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="538"/>
+            <point key="canvasLocation" x="2260" y="537.48125937031489"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="3gU-u9-YAS">

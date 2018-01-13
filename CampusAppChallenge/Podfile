@@ -4,6 +4,6 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'CampusAppChallenge' do
-   pod 'IndoorwaySdk', '~> 2.0.0'
+   pod 'IndoorwaySdk', '~> 2.0.2'
    pod 'OAuthSwift', '~> 1.2.0'
 end

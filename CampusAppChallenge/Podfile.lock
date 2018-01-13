@@ -11,7 +11,7 @@ PODS:
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
-  - IndoorwaySdk (~> 2.0.0)
+  - IndoorwaySdk (~> 2.0.2)
   - OAuthSwift (~> 1.2.0)
 
 SPEC CHECKSUMS:
@@ -22,6 +22,6 @@ SPEC CHECKSUMS:
   OAuthSwift: 7fd6855b8e4d58eb5a30d156ea9bed7a8aecd1ca
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 3745db2110e791962f140d6ae22a73e5f656a675
+PODFILE CHECKSUM: 8520e60bdcb4d7d293db11955b419aec71ca5139
 
 COCOAPODS: 1.3.1
