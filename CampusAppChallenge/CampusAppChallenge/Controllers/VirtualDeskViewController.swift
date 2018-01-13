@@ -22,6 +22,8 @@ class VirtualDeskViewController: UIViewController {
     var mapView: IndoorwayMapView!
     
     let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor2)
+    
+    let listener = StateListener()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,8 +114,15 @@ class StateListener: IndoorwayStateListener {
         case .locatingForeground:
             print("Locating Foregrand")
             
-            if let mapView = mapView, let room = Value.room[211] {
-                mapView.navigate(toObjectWithId: room)
+            if let mapView = mapView, let room = Value.room[214] {
+                //mapView.navigate(toObjectWithId: room)
+                
+                if let room1 = Value.room[214], let room2 = Value.room[213] {
+                    print("Id1: \(room1), id2: \(room2)")
+                    mapView.navigate(fromObjectWithId: room1, toObjectWithId: room)
+                }
+                
+                print("navigation activated")
             }
         case .determiningLocation:
             print("Determinig location")
