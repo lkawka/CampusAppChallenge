@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AWSCore (2.6.10)
+  - AWSSQS (2.6.10):
+    - AWSCore (= 2.6.10)
+  - IndoorwaySdk (2.0.2):
+    - Alamofire (~> 4.5.1)
+    - AWSSQS (~> 2.6.1)
+    - SwiftyJSON (~> 3.1.4)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - IndoorwaySdk (~> 2.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AWSCore: 5bb072a6b5b185f43ddbd239d6554d2f8a285ad2
+  AWSSQS: 6bcf0f7ebe6e314116017a4d0f379373a5c7b996
+  IndoorwaySdk: 508948adfca82ffe1ea62c42f2ab362019fc81cf
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 8845e5bd279c5d5cf4daee825ebe2716cfe5c7d7
+
+COCOAPODS: 1.3.1
