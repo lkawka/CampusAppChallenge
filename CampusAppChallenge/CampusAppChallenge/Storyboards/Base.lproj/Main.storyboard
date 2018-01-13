@@ -10,21 +10,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Virtual Desk-->
         <scene sceneID="9zX-At-hyB">
             <objects>
-                <viewController id="26z-de-Jh5" sceneMemberID="viewController">
+                <viewController id="26z-de-Jh5" customClass="VirtualDeskViewController" customModule="CampusAppChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B2T-4g-KbM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WcF-Gc-hcP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="gLE-xU-22B"/>
+                    <tabBarItem key="tabBarItem" title="Virtual Desk" id="gLE-xU-22B"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Je8-HR-jq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="415"/>
+            <point key="canvasLocation" x="2260" y="538"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="3gU-u9-YAS">
@@ -45,7 +45,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="B0o-KM-tjQ">
             <objects>
-                <tabBarController id="4T0-Qi-c3d" sceneMemberID="viewController">
+                <tabBarController id="4T0-Qi-c3d" customClass="TabBarController" customModule="CampusAppChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rdd-D6-xdK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
