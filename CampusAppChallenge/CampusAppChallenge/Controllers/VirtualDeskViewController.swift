@@ -21,12 +21,29 @@ class VirtualDeskViewController: UIViewController {
     
     var mapView: IndoorwayMapView!
     
-    let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor1)
+    let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor2)
+    
+    let listener = StateListener()
+    
+    //MARK: - Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupMap()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        listener.mapView = mapView
+        IndoorwayLocationSdk.instance().state.onChange.addListener(listener: listener)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        IndoorwayLocationSdk.instance().state.onChange.removeListener(listener: listener)
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,7 +66,6 @@ class VirtualDeskViewController: UIViewController {
         mapView.delegate = self
         mapView.centerAtUserPosition = true
         mapView.rotateWithUserHeading = true
-        
         
         mapView.loadMap(with: mapDescription) { [weak self] (completed) in
             self?.mapView.showsUserLocation = completed // To start displaying location if map is properly loaded
@@ -77,4 +93,41 @@ extension VirtualDeskViewController: IndoorwayMapViewDelegate {
     func mapViewDidFailLoadingMap(_ mapView: IndoorwayMapView, withError error: Error) {
         print("Map view did fail loading map with error: \(error.localizedDescription)")
     }
+    
+    func mapView(_ mapView: IndoorwayMapView, didSelectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
+        print("User did select indoor object with identifier: \(indoorObjectInfo.objectId)")
+    }
+    func mapView(_ mapView: IndoorwayMapView, didDeselectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
+        print("User did deselect indoor object with identifier: \(indoorObjectInfo.objectId)")
+    }
+}
+
+//MARK: - State listener
+
+class StateListener: IndoorwayStateListener {
+    var mapView: IndoorwayMapView?
+    
+    func stateChanged(state: IndoorwayLocationState) {
+        switch  state {
+        case .starting:
+            print("Starting")
+        case .locatingBackground:
+            print("Locating BackGround")
+        case .locatingForeground:
+            print("Locating Foregrand")
+            
+            if let mapView = mapView, let room = Value.room[211] {
+                mapView.navigate(toObjectWithId: room)
+            }
+        case .determiningLocation:
+            print("Determinig location")
+        case .stopped:
+            print("Stopped")
+        case .error:
+            print("Error")
+        default:
+            print("Other action")
+        }
+    }
+    
 }
