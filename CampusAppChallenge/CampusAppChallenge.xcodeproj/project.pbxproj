@@ -16,6 +16,7 @@
 		8849DCEB200A3D7400B94987 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DCEA200A3D7400B94987 /* TabBarController.swift */; };
 		8849DCED200A3DA500B94987 /* VirtualDeskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DCEC200A3DA500B94987 /* VirtualDeskViewController.swift */; };
 		8849DCF3200A426A00B94987 /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DCF2200A426A00B94987 /* Values.swift */; };
+		B54C5AC8200A5C580053D97D /* USOSApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54C5AC7200A5C580053D97D /* USOSApiHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		8849DCEA200A3D7400B94987 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8849DCEC200A3DA500B94987 /* VirtualDeskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualDeskViewController.swift; sourceTree = "<group>"; };
 		8849DCF2200A426A00B94987 /* Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Values.swift; sourceTree = "<group>"; };
+		B54C5AC7200A5C580053D97D /* USOSApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = USOSApiHandler.swift; path = "CampusAppChallenge/Controllers/Rafał dzban/USOSApiHandler.swift"; sourceTree = SOURCE_ROOT; };
 		C8830DA0CA6DB79E4E2FCFE3 /* Pods-CampusAppChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAppChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAppChallenge/Pods-CampusAppChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 		8849DCE7200A3CAB00B94987 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B54C5AC7200A5C580053D97D /* USOSApiHandler.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				8849DCEB200A3D7400B94987 /* TabBarController.swift in Sources */,
 				8849DCED200A3DA500B94987 /* VirtualDeskViewController.swift in Sources */,
 				8849DCC4200A2A6800B94987 /* AppDelegate.swift in Sources */,
+				B54C5AC8200A5C580053D97D /* USOSApiHandler.swift in Sources */,
 				8849DCF3200A426A00B94987 /* Values.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
