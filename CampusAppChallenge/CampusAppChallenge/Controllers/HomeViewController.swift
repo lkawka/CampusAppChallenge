@@ -17,6 +17,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var headerView: UIView!
     
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var classNameLabel: UILabel!
     @IBOutlet weak var roomNumberLabel: UILabel!
     @IBOutlet weak var navigateButton: UIButton!
@@ -33,9 +34,25 @@ class HomeViewController: UIViewController {
             if let event = event {
                 headerView.isHidden = false
                 
-                //timeLabel.text = event.startTime
+                timeLabel.text = event.startTime.timeToString()
+                dayLabel.text = event.startTime.dayToString()
+                
+                classNameLabel.text = event.eventName
+                roomNumberLabel.text = " room: \(event.roomNumber) "
+                
             } else {
                 headerView.isHidden = true
+            }
+        }
+    }
+    
+    var isNavigating = false {
+        didSet {
+            if self.isNavigating {
+                if let room = Value.room[event!.roomNumber] {
+                    positionListener.isNavigating = self.isNavigating
+                    positionListener.destination = room
+                }
             }
         }
     }
@@ -48,10 +65,20 @@ class HomeViewController: UIViewController {
         setupHeaderView()
         setupCenterLocationButton()
         setupMapView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         setupListeners()
         
         event = Schedule().events[0]
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        unregisterListeners()
     }
     
     //MARK: - Setup
@@ -73,7 +100,6 @@ class HomeViewController: UIViewController {
     
     private func setupCenterLocationButton() {
         centerLocationButton.layer.cornerRadius = centerLocationButton.bounds.size.width/2
-        
     }
     
     private func setupMapView() {
@@ -104,6 +130,14 @@ class HomeViewController: UIViewController {
         IndoorwayLocationSdk.instance().state.onChange.addListener(listener: stateListener)
     }
     
+    //MARK: - Unregistering
+    
+    private func unregisterListeners() {
+        IndoorwayLocationSdk.instance().position.onChange.removeListener(listener: positionListener)
+        
+        IndoorwayLocationSdk.instance().state.onChange.removeListener(listener: stateListener)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -119,10 +153,16 @@ class HomeViewController: UIViewController {
     @IBAction func centerLocationButtonTapped(_ sender: Any) {
         mapView.centerAtUserPosition = true
         mapView.centerAtUserPosition = false
+        
+        //positionListener.shouldPrint = true
     }
     
     @IBAction func navigateButtonTapped(_ sender: Any) {
-        if let room = Value.room[213] {
+        print("room: \(event!.roomNumber)")
+        
+        isNavigating = true
+        if let room = Value.room[event!.roomNumber] {
+            
             mapView.navigate(toObjectWithId: room)
         }
     }
@@ -133,10 +173,9 @@ class HomeViewController: UIViewController {
 //MARK: - Indoorway Map Delegate
 
 extension HomeViewController: IndoorwayMapViewDelegate {
-    // Map loading
-    func mapViewDidFinishLoadingMap(_ mapView: IndoorwayMapView) {
+    /*func mapViewDidFinishLoadingMap(_ mapView: IndoorwayMapView) {
         print("Map view did finish loading")
-    }
+    }*/
     func mapViewDidFailLoadingMap(_ mapView: IndoorwayMapView, withError error: Error) {
         print("Map view did fail loading map with error: \(error.localizedDescription)")
     }
@@ -147,14 +186,28 @@ extension HomeViewController: IndoorwayMapViewDelegate {
     func mapView(_ mapView: IndoorwayMapView, didDeselectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
         print("User did deselect indoor object with identifier: \(indoorObjectInfo.objectId)")
     }*/
+    
+    func mapView(_ mapView: IndoorwayMapView, didTapLocation location: IndoorwayLatLon) {
+        print("User did tap location: \(location.latitude) \(location.longitude)")
+    }
+    
+    func mapView(_ mapView: IndoorwayMapView, didSelectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
+        //mapView.objec
+    }
 }
 
 class PositionListener: IndoorwayPositionListener {
     var mapView: IndoorwayMapView?
+    //var shouldPrint = false
+    var isNavigating = false
+    var destination = ""
     
     func positionChanged(position: IndoorwayLocation) {
+        /*if shouldPrint {
+            print("latitude: \(position.latitude), longitude: \(position.longitude)")
+            shouldPrint = false
+        }*/
         
-        //Change map according to the floor you are on
         if let mapView = mapView {
             if mapView.loadedMap?.mapUuid != position.mapUuid {
                 let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: position.mapUuid!)
@@ -163,7 +216,34 @@ class PositionListener: IndoorwayPositionListener {
                     mapView.showsUserLocation = completed // To start displaying location if map is properly loaded
                 }
             }
+            
+            if isNavigating {
+                var found = false
+                
+                for object in mapView.indoorObjects {
+                    if object.objectId == destination {
+                        mapView.navigate(toObjectWithId: destination)
+                        found = true
+                    }
+                }
+                
+                if !found {
+                    if mapView.loadedMap?.mapUuid == Value.mapUuidFloor0 {
+                        mapView.navigate(to: Value.staircase[0])
+                    } else if mapView.loadedMap?.mapUuid == Value.mapUuidFloor1 {
+                        mapView.navigate(to: Value.staircase[1])
+                    } else if  mapView.loadedMap?.mapUuid == Value.mapUuidFloor2 {
+                        mapView.navigate(to: Value.staircase[2])
+                    }
+                }
+            }
         }
     }
+}
+
+class ProximityEventsListener: IndoorwayLocationDashboardProximityEventsListener {
     
+    func didFireProximityEvent(_ event: IndoorwayProximityEvent) {
+        
+    }
 }
