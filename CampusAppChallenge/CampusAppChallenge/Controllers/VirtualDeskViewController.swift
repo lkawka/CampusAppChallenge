@@ -12,19 +12,6 @@ import IndoorwaySdk
 class VirtualDeskViewController: UIViewController {
     //MARK: - Properties
     
-    @IBAction func buttonTapped(_ sender: Any) {
-        if  let room = Value.room[214] {
-            mapView.navigate(toObjectWithId: room)
-            
-            /*if let room1 = Value.room[214], let room2 = Value.room[213] {
-             print("Id1: \(room1), id2: \(room2)")
-             mapView.navigate(fromObjectWithId: room1, toObjectWithId: room2)
-             }*/
-            
-            print("navigation activated")
-        }
-    }
-    
     /*let visitor = IndoorwayVisitorEntry(name: "John",
                                         email: "john@appleseed.com",
                                         age: nil,
@@ -68,7 +55,6 @@ class VirtualDeskViewController: UIViewController {
         mapView = IndoorwayMapView()
         mapView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(mapView)
-        view.sendSubview(toBack: mapView)
         
         mapView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
@@ -131,13 +117,16 @@ class StateListener: IndoorwayStateListener {
            /* if let mapView = mapView, let room = Value.room[214] {
                 mapView.navigate(toObjectWithId: room)
                 
-                /*if let room1 = Value.room[214], let room2 = Value.room[213] {
-                    print("Id1: \(room1), id2: \(room2)")
-                    mapView.navigate(fromObjectWithId: room1, toObjectWithId: room2)
-                }*/
+             
  
                 print("navigation activated")
             }*/
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+1) {
+                if let mapView = self.mapView, let room1 = Value.room[214], let room2 = Value.room[213] {
+                    print("Id1: \(room1), id2: \(room2)")
+                    mapView.navigate(fromObjectWithId: room1, toObjectWithId: room2)
+                }
+            }
         case .determiningLocation:
             print("Determinig location")
         case .stopped:
