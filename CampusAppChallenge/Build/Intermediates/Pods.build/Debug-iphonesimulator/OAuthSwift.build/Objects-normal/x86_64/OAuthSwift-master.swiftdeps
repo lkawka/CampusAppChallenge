@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "b9dd4860c800c07bb1bf00f68e7cc4a4"
-build_time: [1515871297, 655985000]
+build_time: [1515871906, 145232000]
 inputs:
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/OAuthSwift/Sources/Collection+OAuthSwift.swift": [1515869736, 0]
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/OAuthSwift/Sources/Data+OAuthSwift.swift": [1515869736, 0]

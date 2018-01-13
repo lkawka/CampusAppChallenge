@@ -10,13 +10,13 @@ import Foundation
 
 extension Date
 {
-    convenience
+    
     init(dateString:String) {
         let dateStringFormatter = DateFormatter()
         dateStringFormatter.dateFormat = "yyyy-MM-dd HH:mm"
-        dateStringFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-        let d = dateStringFormatter.dateFromString(dateString)!
-        self.init(timeInterval:0, sinceDate:d)
+        dateStringFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") as Locale!
+        let d = dateStringFormatter.date(from: dateString)!
+        self.init(timeInterval:0, since:d)
         
     }
 }
