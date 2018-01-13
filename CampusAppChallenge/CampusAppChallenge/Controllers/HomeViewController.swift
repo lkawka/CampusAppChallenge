@@ -59,9 +59,16 @@ class HomeViewController: UIViewController {
     private func setupHeaderView() {
         if let event = event {
             headerView.isHidden = false
+            
+            
         } else {
             headerView.isHidden = true
         }
+        
+        roomNumberLabel.layer.backgroundColor = #colorLiteral(red: 0.1820915341, green: 0.1928494871, blue: 0.5732489228, alpha: 1).cgColor
+        roomNumberLabel.textColor = UIColor.white
+        roomNumberLabel.layer.cornerRadius = 8.0
+        
     }
     
     private func setupCenterLocationButton() {
