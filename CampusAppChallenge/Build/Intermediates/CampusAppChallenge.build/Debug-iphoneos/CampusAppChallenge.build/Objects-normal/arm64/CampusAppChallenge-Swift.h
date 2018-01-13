@@ -206,6 +206,41 @@ SWIFT_CLASS("_TtC18CampusAppChallenge11AppDelegate")
 @class NSBundle;
 @class NSCoder;
 
+SWIFT_CLASS("_TtC18CampusAppChallenge20FindMeViewController")
+@interface FindMeViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+@class UIView;
+@class UILabel;
+
+SWIFT_CLASS("_TtC18CampusAppChallenge18HomeViewController")
+@interface HomeViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified centerLocationButton;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified headerView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified classNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified roomNumberLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified navigateButton;
+- (void)viewDidLoad;
+- (IBAction)centerLocationButtonTapped:(id _Nonnull)sender;
+- (IBAction)navigateButtonTapped:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class IndoorwayMapView;
+
+@interface HomeViewController (SWIFT_EXTENSION(CampusAppChallenge)) <IndoorwayMapViewDelegate>
+- (void)mapViewDidFinishLoadingMap:(IndoorwayMapView * _Nonnull)mapView;
+- (void)mapViewDidFailLoadingMap:(IndoorwayMapView * _Nonnull)mapView withError:(NSError * _Nonnull)error;
+@end
+
+
 SWIFT_CLASS("_TtC18CampusAppChallenge16TabBarController")
 @interface TabBarController : UITabBarController
 - (void)viewDidLoad;
@@ -217,7 +252,6 @@ SWIFT_CLASS("_TtC18CampusAppChallenge16TabBarController")
 
 SWIFT_CLASS("_TtC18CampusAppChallenge25VirtualDeskViewController")
 @interface VirtualDeskViewController : UIViewController
-- (IBAction)buttonTapped:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
@@ -226,7 +260,6 @@ SWIFT_CLASS("_TtC18CampusAppChallenge25VirtualDeskViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class IndoorwayMapView;
 @class IndoorwayObjectInfo;
 
 @interface VirtualDeskViewController (SWIFT_EXTENSION(CampusAppChallenge)) <IndoorwayMapViewDelegate>

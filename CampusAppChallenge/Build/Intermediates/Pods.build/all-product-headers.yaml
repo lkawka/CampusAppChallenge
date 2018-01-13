@@ -4,7 +4,7 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/AWSCore/AWSCore.framework/Headers",
+      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -64,7 +64,7 @@
         {
           'type': 'file',
           'name': "AWSCore-Swift.h",
-          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/AWSCore/AWSCore.framework/Headers/AWSCore-Swift.h"
+          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSCore-Swift.h"
         },
         {
           'type': 'file',
@@ -400,18 +400,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/AWSCore/AWSCore.framework/Modules",
+      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSCore.build/module.modulemap"
+          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphoneos/AWSCore.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/AWSCore/AWSCore.framework/PrivateHeaders",
+      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/PrivateHeaders",
       'contents': [
         {
           'type': 'file',
@@ -477,12 +477,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/AWSSQS/AWSSQS.framework/Headers",
+      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSSQS/AWSSQS.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSSQS-Swift.h",
-          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/AWSSQS/AWSSQS.framework/Headers/AWSSQS-Swift.h"
+          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSSQS/AWSSQS.framework/Headers/AWSSQS-Swift.h"
         },
         {
           'type': 'file',
@@ -513,23 +513,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/AWSSQS/AWSSQS.framework/Modules",
+      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSSQS/AWSSQS.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSSQS.build/module.modulemap"
+          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphoneos/AWSSQS.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers",
+      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Alamofire-Swift.h",
-          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
         },
         {
           'type': 'file',
@@ -540,23 +540,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules",
+      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/module.modulemap"
+          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphoneos/Alamofire.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/OAuthSwift/OAuthSwift.framework/Headers",
+      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/OAuthSwift/OAuthSwift.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "OAuthSwift-Swift.h",
-          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/OAuthSwift/OAuthSwift.framework/Headers/OAuthSwift-Swift.h"
+          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/OAuthSwift/OAuthSwift.framework/Headers/OAuthSwift-Swift.h"
         },
         {
           'type': 'file',
@@ -567,18 +567,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/OAuthSwift/OAuthSwift.framework/Modules",
+      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/OAuthSwift/OAuthSwift.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphonesimulator/OAuthSwift.build/module.modulemap"
+          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphoneos/OAuthSwift.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/Pods_CampusAppChallenge.framework/Headers",
+      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/Pods_CampusAppChallenge.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -588,29 +588,29 @@
         {
           'type': 'file',
           'name': "Pods_CampusAppChallenge-Swift.h",
-          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/Pods_CampusAppChallenge.framework/Headers/Pods_CampusAppChallenge-Swift.h"
+          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/Pods_CampusAppChallenge.framework/Headers/Pods_CampusAppChallenge-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/Pods_CampusAppChallenge.framework/Modules",
+      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/Pods_CampusAppChallenge.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-CampusAppChallenge.build/module.modulemap"
+          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-CampusAppChallenge.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers",
+      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SwiftyJSON-Swift.h",
-          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
         },
         {
           'type': 'file',
@@ -621,12 +621,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules",
+      'name': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphonesimulator/SwiftyJSON.build/module.modulemap"
+          'external-contents': "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphoneos/SwiftyJSON.build/module.modulemap"
         }
       ]
     }

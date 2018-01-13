@@ -9,7 +9,7 @@
 import Foundation
 
 protocol Personable {
-    let firstName: String
-    let secondName: String?
-    let surname: String
+    var firstName: String {get}
+    var secondName: String? {get}
+    var surname: String {get}
 }
