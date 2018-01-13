@@ -12,21 +12,21 @@ import IndoorwaySdk
 class VirtualDeskViewController: UIViewController {
     //MARK: - Properties
     
-    let visitor = IndoorwayVisitorEntry(name: "John",
+    /*let visitor = IndoorwayVisitorEntry(name: "John",
                                         email: "john@appleseed.com",
                                         age: nil,
                                         sex: nil,
                                         groupUuid: nil,
-                                        sharedLocation: nil)
+                                        sharedLocation: nil)*/
     
-    var mapView = IndoorwayMapView()
+    var mapView: IndoorwayMapView!
     
-    let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor0)
+    let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor1)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        setupMap()
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +37,7 @@ class VirtualDeskViewController: UIViewController {
     //MARK: - Setup
     
     private func setupMap() {
+        mapView = IndoorwayMapView()
         mapView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(mapView)
         
@@ -46,6 +47,9 @@ class VirtualDeskViewController: UIViewController {
         mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
         mapView.delegate = self
+        mapView.centerAtUserPosition = true
+        mapView.rotateWithUserHeading = true
+        
         
         mapView.loadMap(with: mapDescription) { [weak self] (completed) in
             self?.mapView.showsUserLocation = completed // To start displaying location if map is properly loaded
