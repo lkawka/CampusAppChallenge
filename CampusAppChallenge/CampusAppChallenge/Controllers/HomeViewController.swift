@@ -57,7 +57,7 @@ class HomeViewController: UIViewController {
         }
     }
     
-    //MARK: Life Cycle
+    //MARK: - Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +65,7 @@ class HomeViewController: UIViewController {
         setupHeaderView()
         setupCenterLocationButton()
         setupMapView()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,6 +74,12 @@ class HomeViewController: UIViewController {
         setupListeners()
         
         event = Schedule().events[0]
+        
+        let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor1)
+        
+        mapView.loadMap(with: mapDescription) { [weak self] (completed) in
+            self?.mapView.showsUserLocation = completed // To start displaying location if map is properly loaded
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -120,6 +127,13 @@ class HomeViewController: UIViewController {
         mapView.loadMap(with: mapDescription) { [weak self] (completed) in
             self?.mapView.showsUserLocation = completed // To start displaying location if map is properly loaded
         }
+        
+        let tag = "Sample tag"
+        let objectsWithTag = mapView.indoorObjects
+            .filter {
+                $0.objectTags.contains(tag)
+        }
+        
     }
     
     private func setupListeners() {
@@ -154,7 +168,7 @@ class HomeViewController: UIViewController {
         mapView.centerAtUserPosition = true
         mapView.centerAtUserPosition = false
         
-        //positionListener.shouldPrint = true
+        positionListener.shouldPrint = true
     }
     
     @IBAction func navigateButtonTapped(_ sender: Any) {
@@ -166,7 +180,7 @@ class HomeViewController: UIViewController {
             mapView.navigate(toObjectWithId: room)
         }
     }
-    
+
     
 }
 
@@ -180,42 +194,40 @@ extension HomeViewController: IndoorwayMapViewDelegate {
         print("Map view did fail loading map with error: \(error.localizedDescription)")
     }
     
-    /*func mapView(_ mapView: IndoorwayMapView, didSelectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
+    func mapView(_ mapView: IndoorwayMapView, didSelectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
         print("User did select indoor object with identifier: \(indoorObjectInfo.objectId)")
-    }
+        //indoorObjectInfo.
+     }
     func mapView(_ mapView: IndoorwayMapView, didDeselectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
         print("User did deselect indoor object with identifier: \(indoorObjectInfo.objectId)")
-    }*/
+    }
     
     func mapView(_ mapView: IndoorwayMapView, didTapLocation location: IndoorwayLatLon) {
         print("User did tap location: \(location.latitude) \(location.longitude)")
-    }
-    
-    func mapView(_ mapView: IndoorwayMapView, didSelectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
-        //mapView.objec
     }
 }
 
 class PositionListener: IndoorwayPositionListener {
     var mapView: IndoorwayMapView?
-    //var shouldPrint = false
+    var shouldPrint = false
     var isNavigating = false
     var destination = ""
     
     func positionChanged(position: IndoorwayLocation) {
-        /*if shouldPrint {
+        if shouldPrint {
             print("latitude: \(position.latitude), longitude: \(position.longitude)")
             shouldPrint = false
-        }*/
+        }
         
         if let mapView = mapView {
-            if mapView.loadedMap?.mapUuid != position.mapUuid {
+            /*if mapView.loadedMap?.mapUuid != position.mapUuid {
                 let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: position.mapUuid!)
                 
                 mapView.loadMap(with: mapDescription) { [weak self] (completed) in
                     mapView.showsUserLocation = completed // To start displaying location if map is properly loaded
                 }
-            }
+                
+            }*/
             
             if isNavigating {
                 var found = false
@@ -238,12 +250,5 @@ class PositionListener: IndoorwayPositionListener {
                 }
             }
         }
-    }
-}
-
-class ProximityEventsListener: IndoorwayLocationDashboardProximityEventsListener {
-    
-    func didFireProximityEvent(_ event: IndoorwayProximityEvent) {
-        
     }
 }
