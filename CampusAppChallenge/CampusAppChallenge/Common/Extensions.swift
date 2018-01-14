@@ -8,9 +8,7 @@
 
 import Foundation
 
-extension Date
-{
-    
+extension Date {
     init(dateString: String) {
         let dateStringFormatter = DateFormatter()
         dateStringFormatter.dateFormat = "yyyy-MM-dd HH:mm"
@@ -19,5 +17,18 @@ extension Date
         self.init(timeInterval: 0, since:d)
     }
     
+    func timeToString() -> String {
+        let dateformatter = DateFormatter()
+        
+        dateformatter.dateStyle = .none
+        dateformatter.timeStyle = .short
+        
+        return dateformatter.string(from: self)
+    }
     
+    func dayToString() -> String {
+        let weekday = Calendar.current.component(.weekday, from: self)
+        let weekdays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
+        return weekdays[weekday-1]
+    }
 }

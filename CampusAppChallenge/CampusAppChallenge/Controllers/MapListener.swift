@@ -12,7 +12,7 @@ import IndoorwaySdk
 class MapListener: IndoorwayMapListener {
     
     func mapChanged(map: IndoorwayMapDescription) {
-        print("Map changed to \(map.mapUuid)")
+        //print("Map changed to \(map.mapUuid)")
     }
     
 }
