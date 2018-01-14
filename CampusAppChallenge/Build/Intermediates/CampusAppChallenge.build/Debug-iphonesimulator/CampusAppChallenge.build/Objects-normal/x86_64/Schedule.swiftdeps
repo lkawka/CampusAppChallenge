@@ -26,15 +26,18 @@ depends-member:
 - ["s9EquatableP", "init"]
 - ["s9EquatableP", "lab"]
 - ["s9EquatableP", "lecture"]
+- ["s9EquatableP", "tutorial"]
 - ["18CampusAppChallenge5EventV", "init"]
 - ["18CampusAppChallenge9EventTypeO", "lab"]
 - ["18CampusAppChallenge9EventTypeO", "lecture"]
+- ["18CampusAppChallenge9EventTypeO", "tutorial"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s8HashableP", "init"]
 - ["s8HashableP", "lab"]
 - ["s8HashableP", "lecture"]
+- ["s8HashableP", "tutorial"]
 - ["12IndoorwaySdk0A17JSONInitializableP", "init"]
 - ["10SwiftyJSON17JSONSubscriptTypeP", "init"]
 - ["s25LosslessStringConvertibleP", "init"]
@@ -257,4 +260,4 @@ depends-external:
 - "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/OAuthSwift/OAuthSwift.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-interface-hash: "fd508c1596ec50357f2a13637c5f27f1"
+interface-hash: "04d9e0eb3431c3ca515c5bca4c8049a5"

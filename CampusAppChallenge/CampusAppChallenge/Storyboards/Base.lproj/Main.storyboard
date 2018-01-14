@@ -11,6 +11,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Schedule-->
+        <scene sceneID="1gi-Xf-UI6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Schedule" id="0di-V8-job" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="WaB-7h-uIK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EjH-nE-0zu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="406" y="607"/>
+        </scene>
         <!--Virtual Desk-->
         <scene sceneID="9zX-At-hyB">
             <objects>
@@ -128,6 +138,15 @@
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66p-Tu-fZa">
                                 <rect key="frame" x="0.0" y="468" width="375" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6I-WF-wsk">
+                                        <rect key="frame" x="126" y="16" width="123" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="dt4-u7-2hR"/>
@@ -135,6 +154,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="S8U-Qw-uuq" firstAttribute="top" secondItem="ulL-cl-ovH" secondAttribute="top" id="0Nb-fM-SqL"/>
                             <constraint firstItem="B7I-1K-fWB" firstAttribute="bottom" secondItem="pLd-YO-YeF" secondAttribute="bottom" constant="37" id="6BW-3q-qSh"/>
@@ -153,6 +173,10 @@
                             <constraint firstItem="S8U-Qw-uuq" firstAttribute="leading" secondItem="ulL-cl-ovH" secondAttribute="leading" id="wYB-fe-z74"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B7I-1K-fWB"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Es5-BG-K3B" appends="YES" id="MU0-wP-Vnw"/>
+                            <outletCollection property="gestureRecognizers" destination="ajc-2l-4yc" appends="YES" id="cbT-aj-w7L"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="j7w-cw-NOt"/>
                     <connections>
@@ -160,12 +184,25 @@
                         <outlet property="classNameLabel" destination="00Y-fs-U2f" id="r0T-6Y-Ml6"/>
                         <outlet property="dayLabel" destination="m3G-lm-ivT" id="FSx-do-9dh"/>
                         <outlet property="headerView" destination="a1v-o9-klg" id="G1l-nA-qQB"/>
+                        <outlet property="modalView" destination="66p-Tu-fZa" id="ilS-Id-JKA"/>
+                        <outlet property="modalViewHeight" destination="dt4-u7-2hR" id="ZGe-F0-SUg"/>
                         <outlet property="navigateButton" destination="zD1-VO-u0v" id="qFG-Ac-ZKy"/>
                         <outlet property="roomNumberLabel" destination="Qzs-vI-w1q" id="IEj-4d-wrv"/>
+                        <outlet property="swipeGestureRecognizer" destination="Es5-BG-K3B" id="us1-PP-BVW"/>
                         <outlet property="timeLabel" destination="U88-fT-RI3" id="HNU-OV-oN2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ykN-E3-dgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="Es5-BG-K3B">
+                    <connections>
+                        <action selector="swipeDown:" destination="ykn-dj-hJS" id="N1T-Xc-Q4p"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="ajc-2l-4yc">
+                    <connections>
+                        <action selector="swipeUp:" destination="ykn-dj-hJS" id="ual-k6-mhX"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2260" y="-249.62518740629687"/>
         </scene>
@@ -203,6 +240,7 @@
                         <segue destination="26z-de-Jh5" kind="relationship" relationship="viewControllers" id="bNJ-5u-5d5"/>
                         <segue destination="wo0-Fb-jWL" kind="relationship" relationship="viewControllers" id="uVe-Rt-ZGR"/>
                         <segue destination="5Tl-Rm-eKP" kind="relationship" relationship="viewControllers" id="9qr-Ja-atP"/>
+                        <segue destination="0di-V8-job" kind="relationship" relationship="viewControllers" id="eOO-Hi-oZM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1NA-qX-Sj1" userLabel="First Responder" sceneMemberID="firstResponder"/>

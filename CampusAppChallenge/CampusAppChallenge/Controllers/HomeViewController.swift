@@ -22,6 +22,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var roomNumberLabel: UILabel!
     @IBOutlet weak var navigateButton: UIButton!
     
+    @IBOutlet weak var modalView: UIView!
+    @IBOutlet weak var modalViewHeight: NSLayoutConstraint!
+    @IBOutlet var swipeGestureRecognizer: UISwipeGestureRecognizer!
+    
+    
+    
     var mapView: IndoorwayMapView!
     
     let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor0)
@@ -173,7 +179,21 @@ class HomeViewController: UIViewController {
             isNavigating = true
         }
     }
-
+    
+    //MARK: - Handling gesture recognizers
+    
+    
+    @IBAction func swipeUp(_ sender: Any) {
+        modalViewHeight.constant = 400
+    }
+    
+    @IBAction func swipeDown(_ sender: Any) {
+        if modalViewHeight.constant == 150 {
+            modalView.isHidden = true
+        } else {
+            modalViewHeight.constant = 150
+        }
+    }
     
 }
 
@@ -185,6 +205,10 @@ extension HomeViewController: IndoorwayMapViewDelegate {
     }*/
     func mapViewDidFailLoadingMap(_ mapView: IndoorwayMapView, withError error: Error) {
         print("Map view did fail loading map with error: \(error.localizedDescription)")
+    }
+    
+    func mapView(_ mapView: IndoorwayMapView, shouldSelectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) -> Bool {
+        return false
     }
     
     func mapView(_ mapView: IndoorwayMapView, didSelectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
@@ -262,7 +286,7 @@ extension HomeViewController: ProximityDelegate {
     }
     
     func roomEntered(roomNumber: Int) {
-        
+        modalView.isHidden = false
     }
 }
 

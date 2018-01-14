@@ -21,13 +21,15 @@ struct Event {
     let roomNumber: Int
     let lecturer: String
     let eventType: EventType
+    let lecturerWebpage: String
     
-    init(name: String, start: Date, end: Date, room: Int, lecturer: String, type: EventType) {
+    init(name: String, start: Date, end: Date, room: Int, lecturer: String, type: EventType, webpage: String) {
         self.eventName = name
         self.startTime = start
         self.endTime = end
         self.roomNumber = room
         self.lecturer = lecturer
         self.eventType = type
+        self.lecturerWebpage = webpage
     }
 }

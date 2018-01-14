@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "40de744576ef38f024715636a3f4b659"
-build_time: [1515875774, 649194000]
+build_time: [1515875788, 947490000]
 inputs:
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/MapListener.swift": [1515869736, 0]
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/StateListener.swift": [1515869736, 0]
@@ -13,3 +13,4 @@ inputs:
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Common/Values.swift": [1515869736, 0]
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Common/Extensions.swift": [1515875644, 0]
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/HomeViewController.swift": [1515875644, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/FindMeViewController.swift": [9223372036, 854775807]
