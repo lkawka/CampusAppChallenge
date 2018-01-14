@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "de6335f213cf847446049b17dd1bfecd"
-build_time: [1515881078, 449222000]
+build_time: [1515890044, 331792000]
 inputs:
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/AFError.swift": [1515869736, 0]
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Alamofire/Source/Alamofire.swift": [1515869736, 0]

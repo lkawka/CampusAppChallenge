@@ -1,98 +1,259 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "TitleType"
-- "Lecturer"
+- "FindPeopleView"
 provides-nominal:
-- "18CampusAppChallenge9TitleTypeO"
-- "18CampusAppChallenge8LecturerV"
+- "18CampusAppChallenge14FindPeopleViewC"
 provides-member:
-- ["18CampusAppChallenge9TitleTypeO", ""]
-- ["18CampusAppChallenge8LecturerV", ""]
+- ["18CampusAppChallenge14FindPeopleViewC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "=="
-- "AssignmentPrecedence"
-- !private "FloatLiteralType"
-- !private "IntegerLiteralType"
+- "FindPeopleView"
 - "Lecturer"
 - "Personable"
-- "String"
-- "TitleType"
+- "StringLiteralType"
+- "UITableView"
 depends-member:
-- !private ["s13BinaryIntegerP", "hashValue"]
-- !private ["s7CVarArgP", "hashValue"]
-- !private ["s10ComparableP", "hashValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
-- !private ["s17CustomReflectableP", "hashValue"]
-- !private ["s23CustomStringConvertibleP", "hashValue"]
-- !private ["s9DecodableP", "hashValue"]
-- !private ["s9EncodableP", "hashValue"]
-- ["s9EquatableP", "hashValue"]
+- ["s23BidirectionalCollectionP", "init"]
+- ["So15CALayerDelegateP", "Lecturer"]
+- !private ["So15CALayerDelegateP", "init"]
+- ["So15CALayerDelegateP", ""]
+- ["s7CVarArgP", "Lecturer"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", ""]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", "Lecturer"]
+- ["s28CustomDebugStringConvertibleP", "dr"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "mgr"]
+- ["s28CustomDebugStringConvertibleP", "prof"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "dr"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "mgr"]
+- ["s17CustomReflectableP", "prof"]
+- ["s23CustomStringConvertibleP", "Lecturer"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s9DecodableP", "dr"]
+- ["s9DecodableP", "init"]
+- ["s9DecodableP", "mgr"]
+- ["s9DecodableP", "prof"]
+- ["s9EncodableP", "dr"]
+- ["s9EncodableP", "init"]
+- ["s9EncodableP", "mgr"]
+- ["s9EncodableP", "prof"]
+- ["s9EquatableP", "Lecturer"]
+- ["s9EquatableP", "dr"]
+- ["s9EquatableP", "init"]
+- ["s9EquatableP", "mgr"]
+- ["s9EquatableP", "prof"]
 - ["s9EquatableP", ""]
-- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
-- !private ["s17FixedWidthIntegerP", "hashValue"]
-- ["s8HashableP", "hashValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s23ExpressibleByNilLiteralP", "dr"]
+- ["s23ExpressibleByNilLiteralP", "mgr"]
+- ["s23ExpressibleByNilLiteralP", "prof"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["18CampusAppChallenge14FindPeopleViewC", "Lecturer"]
+- ["18CampusAppChallenge14FindPeopleViewC", "Personable"]
+- ["18CampusAppChallenge14FindPeopleViewC", "deinit"]
+- ["18CampusAppChallenge14FindPeopleViewC", "init"]
+- ["18CampusAppChallenge14FindPeopleViewC", "lecturers"]
+- ["s8HashableP", "Lecturer"]
+- ["s8HashableP", "dr"]
+- ["s8HashableP", "init"]
+- ["s8HashableP", "mgr"]
+- ["s8HashableP", "prof"]
 - ["s8HashableP", ""]
-- !private ["Si", "hashValue"]
-- !private ["10SwiftyJSON17JSONSubscriptTypeP", "hashValue"]
-- ["18CampusAppChallenge8LecturerV", "String"]
-- ["18CampusAppChallenge8LecturerV", "TitleType"]
+- ["12IndoorwaySdk0A17JSONInitializableP", "init"]
+- ["10SwiftyJSON17JSONSubscriptTypeP", "init"]
 - ["18CampusAppChallenge8LecturerV", "deinit"]
-- ["18CampusAppChallenge8LecturerV", "firstName"]
 - ["18CampusAppChallenge8LecturerV", "init"]
-- ["18CampusAppChallenge8LecturerV", "secondName"]
-- ["18CampusAppChallenge8LecturerV", "surname"]
-- ["18CampusAppChallenge8LecturerV", "title"]
-- !private ["s25LosslessStringConvertibleP", "hashValue"]
-- !private ["s10MirrorPathP", "hashValue"]
-- !private ["s7NumericP", "hashValue"]
-- ["18CampusAppChallenge10PersonableP", "firstName"]
-- ["18CampusAppChallenge10PersonableP", "secondName"]
-- ["18CampusAppChallenge10PersonableP", "surname"]
-- !private ["18CampusAppChallenge10PersonableP", "title"]
-- ["18CampusAppChallenge10PersonableP", ""]
-- !private ["s13SignedIntegerP", "hashValue"]
-- !private ["s13SignedNumericP", "hashValue"]
-- !private ["s10StrideableP", "hashValue"]
-- ["18CampusAppChallenge9TitleTypeO", "__derived_enum_equals"]
-- ["18CampusAppChallenge9TitleTypeO", "deinit"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["So8NSCodingP", "Lecturer"]
+- ["So8NSCodingP", "init"]
+- ["So8NSCodingP", ""]
+- ["So9NSCopyingP", "init"]
+- ["So21NSItemProviderReadingP", "init"]
+- ["So21NSItemProviderWritingP", "init"]
+- ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "Lecturer"]
+- ["So8NSObjectC", "Personable"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "lecturers"]
+- ["So16NSObjectProtocolP", "Lecturer"]
+- ["So16NSObjectProtocolP", "init"]
+- ["So16NSObjectProtocolP", ""]
+- ["So14NSSecureCodingP", "init"]
+- ["So8NSStringC", "init"]
+- ["Sq", "dr"]
+- ["Sq", "mgr"]
+- ["Sq", "prof"]
+- ["18CampusAppChallenge10PersonableP", "init"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["s16RawRepresentableP", "dr"]
+- ["s16RawRepresentableP", "mgr"]
+- ["s16RawRepresentableP", "prof"]
+- ["s8SequenceP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - ["18CampusAppChallenge9TitleTypeO", "dr"]
-- ["18CampusAppChallenge9TitleTypeO", "hashValue"]
-- ["18CampusAppChallenge9TitleTypeO", "in\u017C"]
 - ["18CampusAppChallenge9TitleTypeO", "mgr"]
 - ["18CampusAppChallenge9TitleTypeO", "prof"]
-- !private ["s18_BitwiseOperationsP", "hashValue"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
-- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
-- !private ["s11_StrideableP", "hashValue"]
+- ["So29UIAccessibilityIdentificationP", "Lecturer"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- ["So12UIAppearanceP", "Lecturer"]
+- !private ["So12UIAppearanceP", "init"]
+- ["So12UIAppearanceP", ""]
+- ["So21UIAppearanceContainerP", "Lecturer"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- ["So21UIAppearanceContainerP", ""]
+- ["So17UICoordinateSpaceP", "Lecturer"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- ["So17UICoordinateSpaceP", ""]
+- ["So23UIDataSourceTranslatingP", "Lecturer"]
+- !private ["So23UIDataSourceTranslatingP", "init"]
+- ["So23UIDataSourceTranslatingP", ""]
+- ["So13UIDynamicItemP", "Lecturer"]
+- !private ["So13UIDynamicItemP", "init"]
+- ["So13UIDynamicItemP", ""]
+- ["So18UIFocusEnvironmentP", "Lecturer"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- ["So18UIFocusEnvironmentP", ""]
+- ["So11UIFocusItemP", "Lecturer"]
+- !private ["So11UIFocusItemP", "init"]
+- ["So11UIFocusItemP", ""]
+- ["So30UIPasteConfigurationSupportingP", "Lecturer"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Lecturer"]
+- ["So11UIResponderC", "Personable"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "lecturers"]
+- ["So30UIResponderStandardEditActionsP", "Lecturer"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- ["So12UIScrollViewC", "Lecturer"]
+- ["So12UIScrollViewC", "Personable"]
+- ["So12UIScrollViewC", "init"]
+- ["So12UIScrollViewC", "lecturers"]
+- ["So35UISpringLoadedInteractionSupportingP", "Lecturer"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- ["So35UISpringLoadedInteractionSupportingP", ""]
+- ["So11UITableViewC", "Lecturer"]
+- ["So11UITableViewC", "Personable"]
+- ["So11UITableViewC", "init"]
+- ["So11UITableViewC", "lecturers"]
+- ["So11UITableViewC", ""]
+- ["So18UITraitEnvironmentP", "Lecturer"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So6UIViewC", "Lecturer"]
+- ["So6UIViewC", "Personable"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "lecturers"]
+- ["9Alamofire14URLConvertibleP", "init"]
+- ["s23_BidirectionalIndexableP", "init"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "Lecturer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s10_IndexableP", "init"]
+- ["s14_IndexableBaseP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Lecturer"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["s21_ObjectiveCBridgeableP", "dr"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "mgr"]
+- ["s21_ObjectiveCBridgeableP", "prof"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
-- !private "s13BinaryIntegerP"
-- !private "s7CVarArgP"
-- !private "s10ComparableP"
-- !private "s29CustomPlaygroundQuickLookableP"
-- !private "s17CustomReflectableP"
-- !private "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s9EncodableP"
+- "s23BidirectionalCollectionP"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
 - "s9EquatableP"
-- !private "s27ExpressibleByIntegerLiteralP"
-- !private "s17FixedWidthIntegerP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s23ExpressibleByNilLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "18CampusAppChallenge14FindPeopleViewC"
 - "s8HashableP"
-- !private "Si"
-- !private "10SwiftyJSON17JSONSubscriptTypeP"
+- "12IndoorwaySdk0A17JSONInitializableP"
+- "10SwiftyJSON17JSONSubscriptTypeP"
 - "18CampusAppChallenge8LecturerV"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
-- !private "s7NumericP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- "Sq"
 - "18CampusAppChallenge10PersonableP"
-- !private "s13SignedIntegerP"
-- !private "s13SignedNumericP"
-- !private "s10StrideableP"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- "s8SequenceP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
 - "18CampusAppChallenge9TitleTypeO"
-- !private "s18_BitwiseOperationsP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s21_ObjectiveCBridgeableP"
-- !private "s11_StrideableP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So17UICoordinateSpaceP"
+- "So23UIDataSourceTranslatingP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So12UIScrollViewC"
+- "So35UISpringLoadedInteractionSupportingP"
+- "So11UITableViewC"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "9Alamofire14URLConvertibleP"
+- "s23_BidirectionalIndexableP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s26_RangeReplaceableIndexableP"
+- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
@@ -223,4 +384,4 @@ depends-external:
 - "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Modules/module.modulemap"
 - "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Modules/module.modulemap"
 - "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/OAuthSwift/OAuthSwift.framework/Modules/module.modulemap"
-interface-hash: "b468020f6be58cdde552811ca3131437"
+interface-hash: "89ff64e82f9878c937f25a15dc56287b"

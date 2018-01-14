@@ -1,0 +1,277 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["10OAuthSwiftAAC", ""]
+- ["10OAuthSwift06OAuth1B0C", ""]
+- ["10OAuthSwift06OAuth2B0C", ""]
+- ["10OAuthSwift0aB11HTTPRequestC", ""]
+- ["10OAuthSwift0aB6ClientC", ""]
+- ["10OAuthSwiftAAC", "Obj_FailureHandler"]
+- ["10OAuthSwift06OAuth1B0C", "objc_authorize"]
+- ["10OAuthSwift06OAuth2B0C", "objc_authorize"]
+- ["10OAuthSwift06OAuth2B0C", "objc_renewAccessToken"]
+- ["10OAuthSwift0aB11HTTPRequestC", "Obj_FailureHandler"]
+- ["10OAuthSwift0aB6ClientC", "objc_request"]
+- ["10OAuthSwift0aB6ClientC", "get"]
+- ["10OAuthSwift0aB6ClientC", "post"]
+- ["10OAuthSwift0aB6ClientC", "put"]
+- ["10OAuthSwift0aB6ClientC", "delete"]
+- ["10OAuthSwift0aB6ClientC", "patch"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Bool"
+- "BooleanLiteralType"
+- "Data"
+- "Error"
+- "OAuth1Swift"
+- "OAuth2Swift"
+- "OAuthSwift"
+- "OAuthSwiftClient"
+- !private "OAuthSwiftError"
+- "OAuthSwiftHTTPRequest"
+- "OAuthSwiftRequestHandle"
+- "String"
+- !private "URL"
+- "Void"
+depends-member:
+- ["s7CVarArgP", "Headers"]
+- ["s7CVarArgP", "Method"]
+- !private ["s7CVarArgP", "OAuthSwiftError"]
+- ["s7CVarArgP", "Obj_FailureHandler"]
+- ["s7CVarArgP", "Parameters"]
+- ["s7CVarArgP", "SuccessHandler"]
+- !private ["s7CVarArgP", "URL"]
+- !private ["s7CVarArgP", "authorize"]
+- !private ["s7CVarArgP", "renewAccessToken"]
+- !private ["s7CVarArgP", "request"]
+- ["s28CustomDebugStringConvertibleP", "Headers"]
+- ["s28CustomDebugStringConvertibleP", "Method"]
+- !private ["s28CustomDebugStringConvertibleP", "OAuthSwiftError"]
+- ["s28CustomDebugStringConvertibleP", "Obj_FailureHandler"]
+- ["s28CustomDebugStringConvertibleP", "Parameters"]
+- ["s28CustomDebugStringConvertibleP", "SuccessHandler"]
+- !private ["s28CustomDebugStringConvertibleP", "URL"]
+- !private ["s28CustomDebugStringConvertibleP", "authorize"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "renewAccessToken"]
+- !private ["s28CustomDebugStringConvertibleP", "request"]
+- !private ["10Foundation13CustomNSErrorP", "encodingError"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s23CustomStringConvertibleP", "Headers"]
+- ["s23CustomStringConvertibleP", "Method"]
+- !private ["s23CustomStringConvertibleP", "OAuthSwiftError"]
+- ["s23CustomStringConvertibleP", "Obj_FailureHandler"]
+- ["s23CustomStringConvertibleP", "Parameters"]
+- ["s23CustomStringConvertibleP", "SuccessHandler"]
+- !private ["s23CustomStringConvertibleP", "URL"]
+- !private ["s23CustomStringConvertibleP", "authorize"]
+- !private ["s23CustomStringConvertibleP", "encodingError"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "renewAccessToken"]
+- !private ["s23CustomStringConvertibleP", "request"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "DELETE"]
+- !private ["s9EquatableP", "GET"]
+- ["s9EquatableP", "Headers"]
+- ["s9EquatableP", "Method"]
+- !private ["s9EquatableP", "OAuthSwiftError"]
+- ["s9EquatableP", "Obj_FailureHandler"]
+- !private ["s9EquatableP", "PATCH"]
+- !private ["s9EquatableP", "POST"]
+- !private ["s9EquatableP", "PUT"]
+- ["s9EquatableP", "Parameters"]
+- ["s9EquatableP", "SuccessHandler"]
+- !private ["s9EquatableP", "URL"]
+- !private ["s9EquatableP", "authorize"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "renewAccessToken"]
+- !private ["s9EquatableP", "request"]
+- !private ["s5ErrorP", "encodingError"]
+- !private ["s8HashableP", "DELETE"]
+- !private ["s8HashableP", "GET"]
+- ["s8HashableP", "Headers"]
+- ["s8HashableP", "Method"]
+- !private ["s8HashableP", "OAuthSwiftError"]
+- ["s8HashableP", "Obj_FailureHandler"]
+- !private ["s8HashableP", "PATCH"]
+- !private ["s8HashableP", "POST"]
+- !private ["s8HashableP", "PUT"]
+- ["s8HashableP", "Parameters"]
+- ["s8HashableP", "SuccessHandler"]
+- !private ["s8HashableP", "URL"]
+- !private ["s8HashableP", "authorize"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "renewAccessToken"]
+- !private ["s8HashableP", "request"]
+- !private ["10OAuthSwift0aB11HTTPRequestC6MethodO", "DELETE"]
+- !private ["10OAuthSwift0aB11HTTPRequestC6MethodO", "GET"]
+- !private ["10OAuthSwift0aB11HTTPRequestC6MethodO", "PATCH"]
+- !private ["10OAuthSwift0aB11HTTPRequestC6MethodO", "POST"]
+- !private ["10OAuthSwift0aB11HTTPRequestC6MethodO", "PUT"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "Data"]
+- ["So8NSObjectC", "Error"]
+- ["So8NSObjectC", "Headers"]
+- ["So8NSObjectC", "Method"]
+- ["So8NSObjectC", "OAuthSwift"]
+- !private ["So8NSObjectC", "OAuthSwiftError"]
+- ["So8NSObjectC", "OAuthSwiftHTTPRequest"]
+- ["So8NSObjectC", "OAuthSwiftRequestHandle"]
+- ["So8NSObjectC", "Obj_FailureHandler"]
+- ["So8NSObjectC", "Parameters"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "SuccessHandler"]
+- ["So8NSObjectC", "TokenSuccessHandler"]
+- !private ["So8NSObjectC", "URL"]
+- ["So8NSObjectC", "Void"]
+- !private ["So8NSObjectC", "authorize"]
+- ["So8NSObjectC", "delete"]
+- ["So8NSObjectC", "get"]
+- ["So8NSObjectC", "objc_authorize"]
+- ["So8NSObjectC", "objc_renewAccessToken"]
+- ["So8NSObjectC", "objc_request"]
+- ["So8NSObjectC", "patch"]
+- ["So8NSObjectC", "post"]
+- ["So8NSObjectC", "put"]
+- !private ["So8NSObjectC", "renewAccessToken"]
+- !private ["So8NSObjectC", "request"]
+- ["So16NSObjectProtocolP", "Headers"]
+- ["So16NSObjectProtocolP", "Method"]
+- !private ["So16NSObjectProtocolP", "OAuthSwiftError"]
+- ["So16NSObjectProtocolP", "Obj_FailureHandler"]
+- ["So16NSObjectProtocolP", "Parameters"]
+- ["So16NSObjectProtocolP", "SuccessHandler"]
+- !private ["So16NSObjectProtocolP", "URL"]
+- !private ["So16NSObjectProtocolP", "authorize"]
+- !private ["So16NSObjectProtocolP", "renewAccessToken"]
+- !private ["So16NSObjectProtocolP", "request"]
+- !private ["10OAuthSwift06OAuth1B0C", "OAuthSwiftError"]
+- ["10OAuthSwift06OAuth1B0C", "OAuthSwiftRequestHandle"]
+- ["10OAuthSwift06OAuth1B0C", "Obj_FailureHandler"]
+- ["10OAuthSwift06OAuth1B0C", "String"]
+- ["10OAuthSwift06OAuth1B0C", "TokenSuccessHandler"]
+- !private ["10OAuthSwift06OAuth1B0C", "URL"]
+- !private ["10OAuthSwift06OAuth1B0C", "authorize"]
+- ["10OAuthSwift06OAuth1B0C", "objc_authorize"]
+- ["10OAuthSwift06OAuth2B0C", "OAuthSwift"]
+- !private ["10OAuthSwift06OAuth2B0C", "OAuthSwiftError"]
+- ["10OAuthSwift06OAuth2B0C", "OAuthSwiftRequestHandle"]
+- ["10OAuthSwift06OAuth2B0C", "Obj_FailureHandler"]
+- ["10OAuthSwift06OAuth2B0C", "Parameters"]
+- ["10OAuthSwift06OAuth2B0C", "String"]
+- ["10OAuthSwift06OAuth2B0C", "TokenSuccessHandler"]
+- !private ["10OAuthSwift06OAuth2B0C", "URL"]
+- !private ["10OAuthSwift06OAuth2B0C", "authorize"]
+- ["10OAuthSwift06OAuth2B0C", "objc_authorize"]
+- ["10OAuthSwift06OAuth2B0C", "objc_renewAccessToken"]
+- !private ["10OAuthSwift06OAuth2B0C", "renewAccessToken"]
+- ["10OAuthSwiftAAC", "Error"]
+- ["10OAuthSwiftAAC", "Headers"]
+- ["10OAuthSwiftAAC", "OAuthSwift"]
+- !private ["10OAuthSwiftAAC", "OAuthSwiftError"]
+- ["10OAuthSwiftAAC", "OAuthSwiftRequestHandle"]
+- ["10OAuthSwiftAAC", "Obj_FailureHandler"]
+- ["10OAuthSwiftAAC", "Parameters"]
+- ["10OAuthSwiftAAC", "String"]
+- ["10OAuthSwiftAAC", "TokenSuccessHandler"]
+- !private ["10OAuthSwiftAAC", "URL"]
+- ["10OAuthSwiftAAC", "Void"]
+- !private ["10OAuthSwiftAAC", "authorize"]
+- ["10OAuthSwiftAAC", "objc_authorize"]
+- ["10OAuthSwiftAAC", "objc_renewAccessToken"]
+- !private ["10OAuthSwiftAAC", "renewAccessToken"]
+- ["10OAuthSwift0aB6ClientC", "Bool"]
+- ["10OAuthSwift0aB6ClientC", "Data"]
+- ["10OAuthSwift0aB6ClientC", "OAuthSwift"]
+- ["10OAuthSwift0aB6ClientC", "OAuthSwiftHTTPRequest"]
+- ["10OAuthSwift0aB6ClientC", "OAuthSwiftRequestHandle"]
+- ["10OAuthSwift0aB6ClientC", "String"]
+- ["10OAuthSwift0aB6ClientC", "delete"]
+- ["10OAuthSwift0aB6ClientC", "get"]
+- ["10OAuthSwift0aB6ClientC", "objc_request"]
+- ["10OAuthSwift0aB6ClientC", "patch"]
+- ["10OAuthSwift0aB6ClientC", "post"]
+- ["10OAuthSwift0aB6ClientC", "put"]
+- !private ["10OAuthSwift0aB6ClientC", "request"]
+- !private ["10OAuthSwift0aB5ErrorO", "deinit"]
+- !private ["10OAuthSwift0aB5ErrorO", "encodingError"]
+- ["10OAuthSwift0aB11HTTPRequestC", "Error"]
+- ["10OAuthSwift0aB11HTTPRequestC", "Method"]
+- ["10OAuthSwift0aB11HTTPRequestC", "Obj_FailureHandler"]
+- ["10OAuthSwift0aB11HTTPRequestC", "SuccessHandler"]
+- ["10OAuthSwift0aB11HTTPRequestC", "Void"]
+- ["10OAuthSwift0aB13RequestHandleP", "Headers"]
+- ["10OAuthSwift0aB13RequestHandleP", "Method"]
+- !private ["10OAuthSwift0aB13RequestHandleP", "OAuthSwiftError"]
+- ["10OAuthSwift0aB13RequestHandleP", "Obj_FailureHandler"]
+- ["10OAuthSwift0aB13RequestHandleP", "Parameters"]
+- ["10OAuthSwift0aB13RequestHandleP", "SuccessHandler"]
+- !private ["10OAuthSwift0aB13RequestHandleP", "URL"]
+- !private ["10OAuthSwift0aB13RequestHandleP", "authorize"]
+- !private ["10OAuthSwift0aB13RequestHandleP", "renewAccessToken"]
+- !private ["s16RawRepresentableP", "DELETE"]
+- !private ["s16RawRepresentableP", "GET"]
+- !private ["s16RawRepresentableP", "PATCH"]
+- !private ["s16RawRepresentableP", "POST"]
+- !private ["s16RawRepresentableP", "PUT"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Headers"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Method"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "OAuthSwiftError"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Obj_FailureHandler"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Parameters"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "SuccessHandler"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "authorize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "renewAccessToken"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "request"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "10Foundation13CustomNSErrorP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s5ErrorP"
+- "s8HashableP"
+- !private "10OAuthSwift0aB11HTTPRequestC6MethodO"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "10OAuthSwift06OAuth1B0C"
+- "10OAuthSwift06OAuth2B0C"
+- "10OAuthSwiftAAC"
+- "10OAuthSwift0aB6ClientC"
+- !private "10OAuthSwift0aB5ErrorO"
+- "10OAuthSwift0aB11HTTPRequestC"
+- "10OAuthSwift0aB13RequestHandleP"
+- !private "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "10Foundation3URLV"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/Target Support Files/OAuthSwift/OAuthSwift-umbrella.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Intermediates/Pods.build/Debug-iphoneos/OAuthSwift.build/unextended-module.modulemap"
+interface-hash: "77c878aeb3bf52a7e8e17f47f909f62a"

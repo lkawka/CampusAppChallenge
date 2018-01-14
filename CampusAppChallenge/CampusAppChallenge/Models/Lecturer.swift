@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum TitleType {
-    case inż
-    case mgr
-    case dr
-    case prof
+enum TitleType: String {
+    case inż = "inż"
+    case mgr = "mgr"
+    case dr = "dr"
+    case prof = "prof"
 }
 
 struct Lecturer: Personable {
