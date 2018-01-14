@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>QMWM9G869M.CampusAppChallenge</string>
+	<string>QZ7GPNNM9G.com.CampusAppChallenge</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>QMWM9G869M.CampusAppChallenge</string>
+		<string>QZ7GPNNM9G.com.CampusAppChallenge</string>
 	</array>
 </dict>
 </plist>

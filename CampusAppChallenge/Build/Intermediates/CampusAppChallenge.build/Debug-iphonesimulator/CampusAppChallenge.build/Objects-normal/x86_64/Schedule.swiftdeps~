@@ -17,20 +17,12 @@ depends-member:
 - ["s10CollectionP", "init"]
 - ["s10ComparableP", "init"]
 - ["s28CustomDebugStringConvertibleP", "init"]
-- ["s28CustomDebugStringConvertibleP", "lab"]
-- ["s28CustomDebugStringConvertibleP", "lecture"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - ["s17CustomReflectableP", "init"]
-- ["s17CustomReflectableP", "lab"]
-- ["s17CustomReflectableP", "lecture"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["10Foundation4DateV", "init"]
 - ["s9DecodableP", "init"]
-- ["s9DecodableP", "lab"]
-- ["s9DecodableP", "lecture"]
 - ["s9EncodableP", "init"]
-- ["s9EncodableP", "lab"]
-- ["s9EncodableP", "lecture"]
 - ["s9EquatableP", "init"]
 - ["s9EquatableP", "lab"]
 - ["s9EquatableP", "lecture"]
@@ -38,8 +30,6 @@ depends-member:
 - ["18CampusAppChallenge9EventTypeO", "lab"]
 - ["18CampusAppChallenge9EventTypeO", "lecture"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- ["s23ExpressibleByNilLiteralP", "lab"]
-- ["s23ExpressibleByNilLiteralP", "lecture"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s8HashableP", "init"]
@@ -57,8 +47,6 @@ depends-member:
 - ["So16NSObjectProtocolP", "init"]
 - ["So14NSSecureCodingP", "init"]
 - ["So8NSStringC", "init"]
-- ["Sq", "lab"]
-- ["Sq", "lecture"]
 - ["s26RangeReplaceableCollectionP", "init"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
 - ["18CampusAppChallenge8ScheduleV", "Date"]
@@ -82,8 +70,6 @@ depends-member:
 - ["s14_IndexableBaseP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- ["s21_ObjectiveCBridgeableP", "lab"]
-- ["s21_ObjectiveCBridgeableP", "lecture"]
 - ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -102,7 +88,6 @@ depends-nominal:
 - "18CampusAppChallenge5EventV"
 - "18CampusAppChallenge9EventTypeO"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- "s23ExpressibleByNilLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - "s8HashableP"
@@ -118,7 +103,6 @@ depends-nominal:
 - "So16NSObjectProtocolP"
 - "So14NSSecureCodingP"
 - "So8NSStringC"
-- "Sq"
 - "s26RangeReplaceableCollectionP"
 - "10Foundation20ReferenceConvertibleP"
 - "18CampusAppChallenge8ScheduleV"

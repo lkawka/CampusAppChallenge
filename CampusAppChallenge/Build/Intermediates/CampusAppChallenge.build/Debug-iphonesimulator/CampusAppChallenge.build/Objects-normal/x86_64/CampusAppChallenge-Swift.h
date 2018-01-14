@@ -203,11 +203,20 @@ SWIFT_CLASS("_TtC18CampusAppChallenge11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC18CampusAppChallenge20FindMeViewController")
+@interface FindMeViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIButton;
 @class UIView;
 @class UILabel;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC18CampusAppChallenge18HomeViewController")
 @interface HomeViewController : UIViewController
