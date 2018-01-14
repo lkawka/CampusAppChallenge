@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class FindMeViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource {
+class FindMeViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -53,6 +53,10 @@ class FindMeViewController: UIViewController, UISearchBarDelegate, UITableViewDa
     //MARK:- TableView Functions
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        searchBar.text = lecturers[indexPath.row].fullName
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -1,0 +1,279 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "EventTableViewCell"
+provides-nominal:
+- "18CampusAppChallenge18EventTableViewCellC"
+provides-member:
+- ["18CampusAppChallenge18EventTableViewCellC", ""]
+provides-dynamic-lookup:
+- "awakeFromNib"
+- "setSelected"
+depends-top-level:
+- "Bool"
+- "EventTableViewCell"
+- "UITableViewCell"
+depends-member:
+- !private ["So15CALayerDelegateP", "awakeFromNib"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "setSelected"]
+- ["So15CALayerDelegateP", ""]
+- !private ["s7CVarArgP", "awakeFromNib"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "setSelected"]
+- ["s7CVarArgP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "setSelected"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "awakeFromNib"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "setSelected"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9EquatableP", "awakeFromNib"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "setSelected"]
+- ["s9EquatableP", ""]
+- ["18CampusAppChallenge18EventTableViewCellC", "Bool"]
+- ["18CampusAppChallenge18EventTableViewCellC", "awakeFromNib"]
+- ["18CampusAppChallenge18EventTableViewCellC", "deinit"]
+- ["18CampusAppChallenge18EventTableViewCellC", "init"]
+- ["18CampusAppChallenge18EventTableViewCellC", "setSelected"]
+- !private ["s8HashableP", "awakeFromNib"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "setSelected"]
+- ["s8HashableP", ""]
+- !private ["So8NSCodingP", "awakeFromNib"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "setSelected"]
+- ["So8NSCodingP", ""]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "awakeFromNib"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "setSelected"]
+- !private ["So16NSObjectProtocolP", "awakeFromNib"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "setSelected"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "setSelected"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So12UIAppearanceP", "awakeFromNib"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "setSelected"]
+- ["So12UIAppearanceP", ""]
+- !private ["So21UIAppearanceContainerP", "awakeFromNib"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "setSelected"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So17UICoordinateSpaceP", "awakeFromNib"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "setSelected"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So13UIDynamicItemP", "awakeFromNib"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "setSelected"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "setSelected"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "awakeFromNib"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "setSelected"]
+- ["So11UIFocusItemP", ""]
+- !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "setSelected"]
+- ["So27UIGestureRecognizerDelegateP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "awakeFromNib"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "setSelected"]
+- !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "setSelected"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- ["So15UITableViewCellC", "Bool"]
+- ["So15UITableViewCellC", "awakeFromNib"]
+- ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "setSelected"]
+- ["So15UITableViewCellC", ""]
+- !private ["So18UITraitEnvironmentP", "awakeFromNib"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "setSelected"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So6UIViewC", "Bool"]
+- ["So6UIViewC", "awakeFromNib"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "setSelected"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setSelected"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setSelected"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+depends-nominal:
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "18CampusAppChallenge18EventTableViewCellC"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So27UIGestureRecognizerDelegateP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So15UITableViewCellC"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/arm64.swiftmodule"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Modules/IndoorwaySdk.swiftmodule/arm64.swiftmodule"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/OAuthSwift/OAuthSwift.framework/Modules/OAuthSwift.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSFMDB.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSGZIP.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSSQS/AWSSQS.framework/Headers/AWSSQS.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSSTS.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDLog+LOGV.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSSQS/AWSSQS.framework/Headers/AWSSQS-umbrella.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSCore-umbrella.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/OAuthSwift/OAuthSwift.framework/Headers/OAuthSwift-umbrella.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSGeneric.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSSQS/AWSSQS.framework/Headers/AWSSQSService.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSSTSService.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSService.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Headers/IPSICoreService.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSCognitoIdentityService.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSCancellationTokenSource.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSTaskCompletionSource.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSTMCache.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSTMDiskCache.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSTMMemoryCache.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSMantle.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSCore.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSUICKeyChainStore.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSSignature.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDASLLogCapture.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSFMDatabase.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSFMDatabaseQueue.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSMTLModel+NSCoding.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSLogging.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSNetworking.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Headers/IPSILatlong.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDLog.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSCocoaLumberjack.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Headers/IndoorwaySdk.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSTask.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSMTLModel.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSSQS/AWSSQS.framework/Headers/AWSSQSModel.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSSTSModel.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSModel.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSCognitoIdentityModel.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSFMDatabasePool.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSServiceEnum.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSCancellationToken.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSValidation.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSCancellationTokenRegistration.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSSerialization.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSURLResponseSerialization.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSURLRequestSerialization.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSMTLReflection.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Headers/IPSIPosition.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Headers/IPSIGraphPosition.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/NSError+AWSMTLModelException.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSInfo.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSCredentialsProvider.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSIdentityProvider.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Headers/IPSIFingerprintBuilder.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSTMCacheBackgroundTaskManager.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSURLSessionManager.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDASLLogger.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDOSLogger.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDTTYLogger.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDFileLogger.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDAbstractDatabaseLogger.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSURLRequestRetryHandler.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSMTLValueTransformer.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSMTLJSONAdapter.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSMTLManagedObjectAdapter.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDDispatchQueueLogFormatter.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDContextFilterLogFormatter.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDMultiFormatter.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSExecutor.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSSQS/AWSSQS.framework/Headers/AWSSQSResources.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSSTSResources.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSCognitoIdentityResources.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Headers/IPSIUtils.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSFMDatabaseAdditions.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/NSValueTransformer+AWSMTLInversionAdditions.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/NSArray+AWSMTLManipulationAdditions.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/NSDictionary+AWSMTLManipulationAdditions.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/NSObject+AWSMTLComparisonAdditions.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDLogMacros.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDAssertMacros.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSDDLegacyMacros.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSBolts.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Headers/IPSConstants.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSFMResultSet.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Headers/IndoorwaySdk-Swift.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/OAuthSwift/OAuthSwift.framework/Headers/OAuthSwift-Swift.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Headers/IPSIMeasurement.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Headers/IPSIFingerprint.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSClientContext.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSSynchronizedMutableDictionary.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSCategory.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSKSReachability.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Headers/AWSCognitoIdentity.h"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSSQS/AWSSQS.framework/Modules/module.modulemap"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Modules/module.modulemap"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Modules/module.modulemap"
+- "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/OAuthSwift/OAuthSwift.framework/Modules/module.modulemap"
+interface-hash: "e71f9f3a8874109b8f15b3d17774edbc"
