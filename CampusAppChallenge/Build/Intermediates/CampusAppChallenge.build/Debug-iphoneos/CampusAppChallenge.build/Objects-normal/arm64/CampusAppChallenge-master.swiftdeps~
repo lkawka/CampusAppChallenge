@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "6af1099af5216ac62dc8e63928ed483e"
-build_time: [1515921363, 32165000]
+build_time: [1515921548, 937347000]
 inputs:
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/MapListener.swift": [1515901279, 0]
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/StateListener.swift": [1515869736, 0]
@@ -16,7 +16,7 @@ inputs:
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/App Delegate/AppDelegate.swift": [1515869736, 0]
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Protocols/Personable.swift": [1515886203, 0]
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/Rafa\u0142\_dzban/USOSApiHandler.swift": [1515869736, 0]
-  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/NewsViewController.swift": [1515921362, 0]
+  "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Controllers/NewsViewController.swift": [1515921548, 0]
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Common/Values.swift": [1515908917, 0]
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Common/Extensions.swift": [1515901279, 0]
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/CampusAppChallenge/Views/EventTableViewCell.swift": [1515912600, 0]

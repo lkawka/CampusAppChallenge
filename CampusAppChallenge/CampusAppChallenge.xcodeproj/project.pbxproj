@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		429D81ACB847239CB549192E /* Pods_CampusAppChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5935ADCF0CCD0B9F11787B02 /* Pods_CampusAppChallenge.framework */; };
 		5F1EC383200B24FC006D3FAB /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F1EC382200B24FC006D3FAB /* Schedule.storyboard */; };
-		5F1EC386200B2ACB006D3FAB /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1EC385200B2ACB006D3FAB /* ScheduleViewController.swift */; };
-		5F1EC388200B2ADB006D3FAB /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1EC387200B2ADB006D3FAB /* DayViewController.swift */; };
 		5F1EC38C200B2B7F006D3FAB /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1EC38B200B2B7F006D3FAB /* EventTableViewCell.swift */; };
 		5FE69026200AA231007AA46F /* FindMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE69025200AA230007AA46F /* FindMe.storyboard */; };
 		5FE69028200AA949007AA46F /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE69027200AA949007AA46F /* News.storyboard */; };
@@ -26,6 +24,8 @@
 		8849DCF7200A72A600B94987 /* StateListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DCF6200A72A600B94987 /* StateListener.swift */; };
 		8849DCF9200A764F00B94987 /* MapListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DCF8200A764F00B94987 /* MapListener.swift */; };
 		8849DD03200AF65500B94987 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DD02200AF65500B94987 /* NewsViewController.swift */; };
+		8849DD05200B48BD00B94987 /* Schedule1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DD04200B48BD00B94987 /* Schedule1ViewController.swift */; };
+		8849DD07200B48D800B94987 /* Schedule2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DD06200B48D800B94987 /* Schedule2ViewController.swift */; };
 		B54C5AC8200A5C580053D97D /* USOSApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54C5AC7200A5C580053D97D /* USOSApiHandler.swift */; };
 		B5818322200A8E4800CAA58C /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5818321200A8E4800CAA58C /* Schedule.swift */; };
 		B5818324200A8E4E00CAA58C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5818323200A8E4E00CAA58C /* Event.swift */; };
@@ -51,8 +51,6 @@
 		2D7455B425CAC9E221C3E297 /* Pods-CampusAppChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAppChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAppChallenge/Pods-CampusAppChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		5935ADCF0CCD0B9F11787B02 /* Pods_CampusAppChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusAppChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F1EC382200B24FC006D3FAB /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
-		5F1EC385200B2ACB006D3FAB /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
-		5F1EC387200B2ADB006D3FAB /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
 		5F1EC38B200B2B7F006D3FAB /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		5FE69025200AA230007AA46F /* FindMe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindMe.storyboard; sourceTree = "<group>"; };
 		5FE69027200AA949007AA46F /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
@@ -72,6 +70,8 @@
 		8849DCF6200A72A600B94987 /* StateListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateListener.swift; path = CampusAppChallenge/Controllers/StateListener.swift; sourceTree = SOURCE_ROOT; };
 		8849DCF8200A764F00B94987 /* MapListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapListener.swift; path = CampusAppChallenge/Controllers/MapListener.swift; sourceTree = SOURCE_ROOT; };
 		8849DD02200AF65500B94987 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		8849DD04200B48BD00B94987 /* Schedule1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule1ViewController.swift; sourceTree = "<group>"; };
+		8849DD06200B48D800B94987 /* Schedule2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule2ViewController.swift; sourceTree = "<group>"; };
 		B54C5AC7200A5C580053D97D /* USOSApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = USOSApiHandler.swift; path = "CampusAppChallenge/Controllers/Rafał dzban/USOSApiHandler.swift"; sourceTree = SOURCE_ROOT; };
 		B5818321200A8E4800CAA58C /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		B5818323200A8E4E00CAA58C /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 		5F1EC384200B2AA9006D3FAB /* Schedule View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5F1EC385200B2ACB006D3FAB /* ScheduleViewController.swift */,
-				5F1EC387200B2ADB006D3FAB /* DayViewController.swift */,
+				8849DD04200B48BD00B94987 /* Schedule1ViewController.swift */,
+				8849DD06200B48D800B94987 /* Schedule2ViewController.swift */,
 			);
 			path = "Schedule View Controller";
 			sourceTree = "<group>";
@@ -439,14 +439,14 @@
 				8849DCF9200A764F00B94987 /* MapListener.swift in Sources */,
 				8849DCF7200A72A600B94987 /* StateListener.swift in Sources */,
 				8849DCEB200A3D7400B94987 /* TabBarController.swift in Sources */,
-				5F1EC388200B2ADB006D3FAB /* DayViewController.swift in Sources */,
-				5F1EC386200B2ACB006D3FAB /* ScheduleViewController.swift in Sources */,
 				B5818331200AB8ED00CAA58C /* Collegue.swift in Sources */,
 				B581832C200AB6B800CAA58C /* Lecturer.swift in Sources */,
 				B5818335200AC2EC00CAA58C /* FindPeopleView.swift in Sources */,
+				8849DD05200B48BD00B94987 /* Schedule1ViewController.swift in Sources */,
 				B5818322200A8E4800CAA58C /* Schedule.swift in Sources */,
 				B5818324200A8E4E00CAA58C /* Event.swift in Sources */,
 				8849DCED200A3DA500B94987 /* VirtualDeskViewController.swift in Sources */,
+				8849DD07200B48D800B94987 /* Schedule2ViewController.swift in Sources */,
 				8849DCC4200A2A6800B94987 /* AppDelegate.swift in Sources */,
 				B581832E200AB88900CAA58C /* Personable.swift in Sources */,
 				B54C5AC8200A5C580053D97D /* USOSApiHandler.swift in Sources */,
@@ -610,12 +610,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QZ7GPNNM9G;
+				DEVELOPMENT_TEAM = QMWM9G869M;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/CampusAppChallenge/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CampusAppChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CampusAppChalleng;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -628,12 +628,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QZ7GPNNM9G;
+				DEVELOPMENT_TEAM = QMWM9G869M;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/CampusAppChallenge/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CampusAppChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CampusAppChalleng;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

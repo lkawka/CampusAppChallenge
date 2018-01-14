@@ -204,17 +204,7 @@ SWIFT_CLASS("_TtC18CampusAppChallenge11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
 @class NSCoder;
-
-SWIFT_CLASS("_TtC18CampusAppChallenge17DayViewController")
-@interface DayViewController : UIViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 SWIFT_CLASS("_TtC18CampusAppChallenge18EventTableViewCell")
 @interface EventTableViewCell : UITableViewCell
@@ -226,6 +216,7 @@ SWIFT_CLASS("_TtC18CampusAppChallenge18EventTableViewCell")
 
 @class UISearchBar;
 @class UITableView;
+@class NSBundle;
 
 SWIFT_CLASS("_TtC18CampusAppChallenge20FindMeViewController")
 @interface FindMeViewController : UIViewController <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
@@ -270,6 +261,11 @@ SWIFT_CLASS("_TtC18CampusAppChallenge18HomeViewController")
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified modalView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified modalViewHeight;
 @property (nonatomic, strong) IBOutlet UISwipeGestureRecognizer * _Null_unspecified swipeGestureRecognizer;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified modalViewSwipeInfoLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified modalViewClassNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified modalViewRoomNumberLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified modalViewLecturerNameLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified modalViewLinkButton;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
@@ -277,6 +273,7 @@ SWIFT_CLASS("_TtC18CampusAppChallenge18HomeViewController")
 - (IBAction)navigateButtonTapped:(id _Nonnull)sender;
 - (IBAction)swipeUp:(id _Nonnull)sender;
 - (IBAction)swipeDown:(id _Nonnull)sender;
+- (IBAction)modelViewLinkButtonTapped:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -285,14 +282,10 @@ SWIFT_CLASS("_TtC18CampusAppChallenge18HomeViewController")
 
 @class IndoorwayMapView;
 @class IndoorwayObjectInfo;
-@class IndoorwayLatLon;
 
 @interface HomeViewController (SWIFT_EXTENSION(CampusAppChallenge)) <IndoorwayMapViewDelegate>
 - (void)mapViewDidFailLoadingMap:(IndoorwayMapView * _Nonnull)mapView withError:(NSError * _Nonnull)error;
 - (BOOL)mapView:(IndoorwayMapView * _Nonnull)mapView shouldSelectIndoorObject:(IndoorwayObjectInfo * _Nonnull)indoorObjectInfo SWIFT_WARN_UNUSED_RESULT;
-- (void)mapView:(IndoorwayMapView * _Nonnull)mapView didSelectIndoorObject:(IndoorwayObjectInfo * _Nonnull)indoorObjectInfo;
-- (void)mapView:(IndoorwayMapView * _Nonnull)mapView didDeselectIndoorObject:(IndoorwayObjectInfo * _Nonnull)indoorObjectInfo;
-- (void)mapView:(IndoorwayMapView * _Nonnull)mapView didTapLocation:(IndoorwayLatLon * _Nonnull)location;
 @end
 
 
@@ -307,20 +300,20 @@ SWIFT_CLASS("_TtC18CampusAppChallenge18NewsViewController")
 @end
 
 
-SWIFT_CLASS("_TtC18CampusAppChallenge22ScheduleViewController")
-@interface ScheduleViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified headerView;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified firstDayView;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified firstDayShadowView;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified secondDayView;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified secondDayShadowView;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified thirdDayView;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified thirdDayShadowView;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified fourthDayView;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified fourthDayShadowView;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified fifthDayView;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified fifthDayShadowView;
+SWIFT_CLASS("_TtC18CampusAppChallenge23Schedule1ViewController")
+@interface Schedule1ViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified TransitionButton;
 - (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18CampusAppChallenge23Schedule2ViewController")
+@interface Schedule2ViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
