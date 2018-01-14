@@ -76,9 +76,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         setupHeaderView()
         setupCenterLocationButton()
         setupMapView()
+        setupModalView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -136,6 +138,15 @@ class HomeViewController: UIViewController {
         }
     }
     
+    private func setupModalView() {
+        let blurEffect = UIBlurEffect(style: .prominent)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = modalView.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        modalView.addSubview(blurEffectView)
+        modalView.sendSubview(toBack: blurEffectView)
+    }
+    
     private func setupListeners() {
         positionListener.mapView = mapView
         IndoorwayLocationSdk.instance().position.onChange.addListener(listener: positionListener)
@@ -188,10 +199,10 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func swipeDown(_ sender: Any) {
-        if modalViewHeight.constant == 150 {
+        if modalViewHeight.constant == 75 {
             modalView.isHidden = true
         } else {
-            modalViewHeight.constant = 150
+            modalViewHeight.constant = 75
         }
     }
     
@@ -223,6 +234,8 @@ extension HomeViewController: IndoorwayMapViewDelegate {
         print("User did tap location: \(location.latitude) \(location.longitude)")
     }
 }
+
+//MARK: - Position Listener Class
 
 class PositionListener: IndoorwayPositionListener {
     var mapView: IndoorwayMapView?
@@ -278,23 +291,7 @@ class PositionListener: IndoorwayPositionListener {
     }
 }
 
-extension HomeViewController: ProximityDelegate {
-    func stopNavigating() {
-        self.isNavigating = false
-        print("isNavigating changed")
-        mapView.stopNavigation()
-    }
-    
-    func roomEntered(roomNumber: Int) {
-        modalView.isHidden = false
-    }
-}
-
-protocol ProximityDelegate: class {
-    func stopNavigating()
-    
-    func roomEntered(roomNumber: Int)
-}
+//MARK: - Proximity Events Listener Class
 
 class ProximityEventsListener: IndoorwayLocationCustomProximityEventsListener {
     var mapView: IndoorwayMapView?
@@ -308,18 +305,42 @@ class ProximityEventsListener: IndoorwayLocationCustomProximityEventsListener {
         print("event fired: \(event.identifier)")
         delegate?.roomEntered(roomNumber: Int(event.identifier)!)
         if isNavigating {
-            print("event.idetifier: ]\(Int(event.identifier)!)], destination: ]\(destination)]")
-            
             if Int(event.identifier)! == destination {
-                print("yow")
                 if let mapView = mapView {
-                    print("fuk")
                     mapView.stopNavigation()
+                    
                     isNavigating = false
+                    
                     delegate?.stopNavigating()
                 }
             }
-            
         }
     }
+}
+
+//MARK: Proximity Delegate
+
+extension HomeViewController: ProximityDelegate {
+    func stopNavigating() {
+        self.isNavigating = false
+        print("isNavigating changed")
+        mapView.stopNavigation()
+    }
+    
+    func roomEntered(roomNumber: Int) {
+        modalView.isHidden = false
+        
+        for event in Schedule().events {
+            if event.roomNumber == roomNumber {
+                
+                break
+            }
+        }
+    }
+}
+
+protocol ProximityDelegate: class {
+    func stopNavigating()
+    
+    func roomEntered(roomNumber: Int)
 }
