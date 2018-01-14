@@ -22,9 +22,18 @@ class Value {
     static let roomLocation = [103: IndoorwayLocation(latitude: 52.2222709655762, longitude: 21.0067958831787, uncertainty: nil, buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor1),
                                107: IndoorwayLocation(latitude: 52.2221637644, longitude: 21.0071244254768, uncertainty: nil, buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor1),
                                211: IndoorwayLocation(latitude: 52.2219513411828, longitude: 21.0067632878172, uncertainty: nil, buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor1),
-                               212: IndoorwayLocation(latitude: 52.2220354368089, longitude: 21.0067526471784, uncertainty: nil, buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor1),
-                               213: IndoorwayLocation(latitude: 52.2221342261612, longitude: 21.0067608066068, uncertainty: nil, buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor1),
-                               214: IndoorwayLocation(latitude: 52.2222170251715, longitude: 21.0067752232291, uncertainty: nil, buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor1)]
+                               212: IndoorwayLocation(latitude: 52.2220354368089, longitude: 21.0067526471784, uncertainty: nil, buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor2),
+                               213: IndoorwayLocation(latitude: 52.2221342261612, longitude: 21.0067608066068, uncertainty: nil, buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor2),
+                               214: IndoorwayLocation(latitude: 52.2222170251715, longitude: 21.0067752232291, uncertainty: nil, buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor2)]
+    
+    static var radious = 3.0
+    
+    static let roomEvent = [103: IndoorwayProximityEvent.onEnter(identifier: "103", triggerArea: IndoorwayProximityEventShape.circular(center: (Value.roomLocation[103])!, radius: Value.radious)),
+                            107: IndoorwayProximityEvent.onEnter(identifier: "107", triggerArea: IndoorwayProximityEventShape.circular(center: (Value.roomLocation[107])!, radius: Value.radious)),
+                            211: IndoorwayProximityEvent.onEnter(identifier: "211", triggerArea: IndoorwayProximityEventShape.circular(center: (Value.roomLocation[211])!, radius: Value.radious)),
+                            212: IndoorwayProximityEvent.onEnter(identifier: "212", triggerArea: IndoorwayProximityEventShape.circular(center: (Value.roomLocation[212])!, radius: Value.radious)),
+                            213: IndoorwayProximityEvent.onEnter(identifier: "213", triggerArea: IndoorwayProximityEventShape.circular(center: (Value.roomLocation[213])!, radius: Value.radious)),
+                            214: IndoorwayProximityEvent.onEnter(identifier: "214", triggerArea: IndoorwayProximityEventShape.circular(center: (Value.roomLocation[214])!, radius: Value.radious))]
     
     static let staircase = [IndoorwayLatLon(latitude: 52.2221069335938, longitude: 21.0069580078125),
                             IndoorwayLatLon(latitude: 52.22216796875, longitude: 21.0069713592529),

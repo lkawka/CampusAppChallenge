@@ -28,6 +28,7 @@ class HomeViewController: UIViewController {
     
     let positionListener = PositionListener()
     let stateListener = StateListener()
+    let proximityListener = ProximityEventsListener()
     
     var event: Event? {
         didSet {
@@ -52,7 +53,14 @@ class HomeViewController: UIViewController {
                 if let room = Value.room[event!.roomNumber] {
                     positionListener.isNavigating = self.isNavigating
                     positionListener.destination = room
+                    
+                    proximityListener.isNavigating = self.isNavigating
+                    proximityListener.destination = event!.roomNumber
                 }
+            } else {
+                positionListener.isNavigating = self.isNavigating
+                
+                proximityListener.isNavigating = self.isNavigating
             }
         }
     }
@@ -65,7 +73,6 @@ class HomeViewController: UIViewController {
         setupHeaderView()
         setupCenterLocationButton()
         setupMapView()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,13 +80,7 @@ class HomeViewController: UIViewController {
         
         setupListeners()
         
-        event = Schedule().events[0]
-        
-        let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor1)
-        
-        mapView.loadMap(with: mapDescription) { [weak self] (completed) in
-            self?.mapView.showsUserLocation = completed // To start displaying location if map is properly loaded
-        }
+        event = Schedule().events[4]
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -127,13 +128,6 @@ class HomeViewController: UIViewController {
         mapView.loadMap(with: mapDescription) { [weak self] (completed) in
             self?.mapView.showsUserLocation = completed // To start displaying location if map is properly loaded
         }
-        
-        let tag = "Sample tag"
-        let objectsWithTag = mapView.indoorObjects
-            .filter {
-                $0.objectTags.contains(tag)
-        }
-        
     }
     
     private func setupListeners() {
@@ -142,6 +136,14 @@ class HomeViewController: UIViewController {
         
         stateListener.mapView = mapView
         IndoorwayLocationSdk.instance().state.onChange.addListener(listener: stateListener)
+        
+        proximityListener.mapView = mapView
+        proximityListener.delegate = self
+        IndoorwayLocationSdk.instance().customProximityEvents.onEvent.addListener(listener: proximityListener)
+        
+        for (_, event) in Value.roomEvent {
+            IndoorwayLocationSdk.instance().customProximityEvents.add(event: event)
+        }
     }
     
     //MARK: - Unregistering
@@ -150,17 +152,9 @@ class HomeViewController: UIViewController {
         IndoorwayLocationSdk.instance().position.onChange.removeListener(listener: positionListener)
         
         IndoorwayLocationSdk.instance().state.onChange.removeListener(listener: stateListener)
+        
+        IndoorwayLocationSdk.instance().customProximityEvents.onEvent.removeListener(listener: proximityListener)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     //MARK: - Button actions
     
@@ -172,12 +166,11 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func navigateButtonTapped(_ sender: Any) {
-        print("room: \(event!.roomNumber)")
-        
         isNavigating = true
         if let room = Value.room[event!.roomNumber] {
             
             mapView.navigate(toObjectWithId: room)
+            isNavigating = true
         }
     }
 
@@ -209,6 +202,7 @@ extension HomeViewController: IndoorwayMapViewDelegate {
 
 class PositionListener: IndoorwayPositionListener {
     var mapView: IndoorwayMapView?
+    
     var shouldPrint = false
     var isNavigating = false
     var destination = ""
@@ -220,21 +214,28 @@ class PositionListener: IndoorwayPositionListener {
         }
         
         if let mapView = mapView {
-            /*if mapView.loadedMap?.mapUuid != position.mapUuid {
+            if mapView.loadedMap?.mapUuid != position.mapUuid {
                 let mapDescription = IndoorwayMapDescription(buildingUuid: Value.buildingUuid, mapUuid: position.mapUuid!)
                 
                 mapView.loadMap(with: mapDescription) { [weak self] (completed) in
                     mapView.showsUserLocation = completed // To start displaying location if map is properly loaded
                 }
                 
-            }*/
+            }
             
             if isNavigating {
                 var found = false
                 
                 for object in mapView.indoorObjects {
                     if object.objectId == destination {
-                        mapView.navigate(toObjectWithId: destination)
+                        //mapView.navigate(toObjectWithId: destination)
+                        for (key, id) in Value.room {
+                            if id == destination {
+                                mapView.navigate(to: IndoorwayLatLon(latitude: (Value.roomLocation[key])!.latitude, longitude: (Value.roomLocation[key])!.longitude))
+                                print("Navigation started")
+                                break
+                            }
+                        }
                         found = true
                     }
                 }
@@ -249,6 +250,52 @@ class PositionListener: IndoorwayPositionListener {
                     }
                 }
             }
+        }
+    }
+}
+
+extension HomeViewController: ProximityDelegate {
+    func stopNavigating() {
+        self.isNavigating = false
+        print("isNavigating changed")
+        mapView.stopNavigation()
+    }
+    
+    func roomEntered(roomNumber: Int) {
+        
+    }
+}
+
+protocol ProximityDelegate: class {
+    func stopNavigating()
+    
+    func roomEntered(roomNumber: Int)
+}
+
+class ProximityEventsListener: IndoorwayLocationCustomProximityEventsListener {
+    var mapView: IndoorwayMapView?
+    
+    weak var delegate: ProximityDelegate?
+    
+    var isNavigating = false
+    var destination = 0
+    
+    func didFireProximityEvent(_ event: IndoorwayProximityEvent) {
+        print("event fired: \(event.identifier)")
+        delegate?.roomEntered(roomNumber: Int(event.identifier)!)
+        if isNavigating {
+            print("event.idetifier: ]\(Int(event.identifier)!)], destination: ]\(destination)]")
+            
+            if Int(event.identifier)! == destination {
+                print("yow")
+                if let mapView = mapView {
+                    print("fuk")
+                    mapView.stopNavigation()
+                    isNavigating = false
+                    delegate?.stopNavigating()
+                }
+            }
+            
         }
     }
 }
