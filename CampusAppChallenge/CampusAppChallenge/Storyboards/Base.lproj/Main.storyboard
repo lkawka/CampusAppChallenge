@@ -31,7 +31,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WcF-Gc-hcP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Virtual Desk" id="gLE-xU-22B"/>
+                    <tabBarItem key="tabBarItem" title="Virtual Desk" image="DeskIcon" id="gLE-xU-22B"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Je8-HR-jq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,7 +178,7 @@
                             <outletCollection property="gestureRecognizers" destination="ajc-2l-4yc" appends="YES" id="cbT-aj-w7L"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="j7w-cw-NOt"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="HomeIcon" id="j7w-cw-NOt"/>
                     <connections>
                         <outlet property="centerLocationButton" destination="pLd-YO-YeF" id="stL-oX-m19"/>
                         <outlet property="classNameLabel" destination="00Y-fs-U2f" id="r0T-6Y-Ml6"/>
@@ -249,6 +249,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="DeskIcon" width="25" height="25"/>
+        <image name="HomeIcon" width="25" height="25"/>
         <image name="NavigateIcon" width="28" height="28"/>
     </resources>
 </document>

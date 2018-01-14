@@ -12,7 +12,7 @@ struct Schedule {
     var events: [Event] = [
         Event(name: "Logic and Set Theory",
               start: Date(dateString: "2018-01-15 8:15"),
-              end: Date(dateString: "2018-01-12 10:00"),
+              end: Date(dateString: "2018-01-15 10:00"),
               room: 103,
               lecturer: "dr Ann Appleseed",
               type: .lecture,

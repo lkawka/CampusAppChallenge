@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--News-->
+        <!--Messages-->
         <scene sceneID="mcP-zI-aph">
             <objects>
                 <viewController id="fnB-1Z-OLr" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nUC-Ld-iPo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="News" id="4mj-xx-Enl"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="MessageIcon" id="4mj-xx-Enl"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3E5-rT-jKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -28,4 +28,7 @@
             <point key="canvasLocation" x="175" y="153"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MessageIcon" width="25" height="25"/>
+    </resources>
 </document>

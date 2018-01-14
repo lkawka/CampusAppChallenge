@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		429D81ACB847239CB549192E /* Pods_CampusAppChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5935ADCF0CCD0B9F11787B02 /* Pods_CampusAppChallenge.framework */; };
 		5F1EC383200B24FC006D3FAB /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F1EC382200B24FC006D3FAB /* Schedule.storyboard */; };
+		5F1EC386200B2ACB006D3FAB /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1EC385200B2ACB006D3FAB /* ScheduleViewController.swift */; };
+		5F1EC388200B2ADB006D3FAB /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1EC387200B2ADB006D3FAB /* DayViewController.swift */; };
+		5F1EC38C200B2B7F006D3FAB /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1EC38B200B2B7F006D3FAB /* EventTableViewCell.swift */; };
 		5FE69026200AA231007AA46F /* FindMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE69025200AA230007AA46F /* FindMe.storyboard */; };
 		5FE69028200AA949007AA46F /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE69027200AA949007AA46F /* News.storyboard */; };
 		8849DCC4200A2A6800B94987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849DCC3200A2A6800B94987 /* AppDelegate.swift */; };
@@ -48,6 +51,9 @@
 		2D7455B425CAC9E221C3E297 /* Pods-CampusAppChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAppChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAppChallenge/Pods-CampusAppChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		5935ADCF0CCD0B9F11787B02 /* Pods_CampusAppChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusAppChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F1EC382200B24FC006D3FAB /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
+		5F1EC385200B2ACB006D3FAB /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		5F1EC387200B2ADB006D3FAB /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		5F1EC38B200B2B7F006D3FAB /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		5FE69025200AA230007AA46F /* FindMe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindMe.storyboard; sourceTree = "<group>"; };
 		5FE69027200AA949007AA46F /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		8849DCC0200A2A6700B94987 /* CampusAppChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusAppChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +111,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5F1EC384200B2AA9006D3FAB /* Schedule View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F1EC385200B2ACB006D3FAB /* ScheduleViewController.swift */,
+				5F1EC387200B2ADB006D3FAB /* DayViewController.swift */,
+			);
+			path = "Schedule View Controller";
+			sourceTree = "<group>";
+		};
 		8849DCB7200A2A6700B94987 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +173,7 @@
 				8849DCEC200A3DA500B94987 /* VirtualDeskViewController.swift */,
 				B5818329200AA54B00CAA58C /* FindMeViewController.swift */,
 				8849DD02200AF65500B94987 /* NewsViewController.swift */,
+				5F1EC384200B2AA9006D3FAB /* Schedule View Controller */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				B5818334200AC2EC00CAA58C /* FindPeopleView.swift */,
+				5F1EC38B200B2B7F006D3FAB /* EventTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -422,6 +439,8 @@
 				8849DCF9200A764F00B94987 /* MapListener.swift in Sources */,
 				8849DCF7200A72A600B94987 /* StateListener.swift in Sources */,
 				8849DCEB200A3D7400B94987 /* TabBarController.swift in Sources */,
+				5F1EC388200B2ADB006D3FAB /* DayViewController.swift in Sources */,
+				5F1EC386200B2ACB006D3FAB /* ScheduleViewController.swift in Sources */,
 				B5818331200AB8ED00CAA58C /* Collegue.swift in Sources */,
 				B581832C200AB6B800CAA58C /* Lecturer.swift in Sources */,
 				B5818335200AC2EC00CAA58C /* FindPeopleView.swift in Sources */,
@@ -434,6 +453,7 @@
 				8849DD03200AF65500B94987 /* NewsViewController.swift in Sources */,
 				8849DCF3200A426A00B94987 /* Values.swift in Sources */,
 				B5818326200A8F6500CAA58C /* Extensions.swift in Sources */,
+				5F1EC38C200B2B7F006D3FAB /* EventTableViewCell.swift in Sources */,
 				8849DCF5200A704A00B94987 /* HomeViewController.swift in Sources */,
 				B581832A200AA54B00CAA58C /* FindMeViewController.swift in Sources */,
 			);

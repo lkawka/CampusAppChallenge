@@ -1,26 +1,25 @@
 //
-//  VirtualDeskViewController.swift
+//  ScheduleViewController.swift
 //  CampusAppChallenge
 //
-//  Created by Lukasz Kawka on 13/01/2018.
+//  Created by Kornel on 14/01/2018.
 //  Copyright © 2018 Lukasz Kawka. All rights reserved.
 //
 
 import UIKit
-import IndoorwaySdk
 
-class VirtualDeskViewController: UIViewController {
-    //MARK: - Properties
-    
+class ScheduleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-    }
-    
 
-    //MARK: - Setup
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
 
     /*
@@ -32,4 +31,5 @@ class VirtualDeskViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 }

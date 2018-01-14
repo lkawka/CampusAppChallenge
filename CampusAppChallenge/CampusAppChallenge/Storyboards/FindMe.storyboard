@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Find Me-->
         <scene sceneID="CG7-yL-f35">
             <objects>
                 <viewController id="I6g-Nh-azq" customClass="FindMeViewController" customModule="CampusAppChallenge" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +70,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="eUP-bz-IPZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tf9-YD-0VX"/>
+                    <tabBarItem key="tabBarItem" title="Find Me" image="TargetIcon" id="tf9-YD-0VX"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="searchBar" destination="ZGj-fE-1cw" id="l86-Jt-NbK"/>
@@ -82,4 +82,7 @@
             <point key="canvasLocation" x="176.80000000000001" y="7.6461769115442282"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TargetIcon" width="25" height="25"/>
+    </resources>
 </document>
