@@ -37,6 +37,7 @@ depends-member:
 - ["18CampusAppChallenge5EventV", "eventType"]
 - ["18CampusAppChallenge5EventV", "init"]
 - ["18CampusAppChallenge5EventV", "lecturer"]
+- ["18CampusAppChallenge5EventV", "lecturerWebpage"]
 - ["18CampusAppChallenge5EventV", "roomNumber"]
 - ["18CampusAppChallenge5EventV", "startTime"]
 - ["18CampusAppChallenge9EventTypeO", "__derived_enum_equals"]
@@ -220,4 +221,4 @@ depends-external:
 - "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/OAuthSwift/OAuthSwift.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-interface-hash: "1dc1b40de78a5b06143812378ebeaf8a"
+interface-hash: "8d10adce2c7319cf78c088efea0b3e14"

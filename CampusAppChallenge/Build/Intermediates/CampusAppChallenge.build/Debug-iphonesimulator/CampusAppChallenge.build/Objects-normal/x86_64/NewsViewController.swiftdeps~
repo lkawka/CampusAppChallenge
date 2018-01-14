@@ -7,110 +7,474 @@ provides-member:
 - ["18CampusAppChallenge18NewsViewControllerC", ""]
 provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
+- "receivedButton"
+- "sentButton"
 - "viewDidLoad"
 depends-top-level:
+- "AssignmentPrecedence"
+- "CGRect"
 - "NewsViewController"
+- !private "StringLiteralType"
+- "UIButton"
+- !private "UIColor"
+- !private "UIImage"
+- "UIView"
 - "UIViewController"
+- !private "_ImageLiteralType"
 depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["So15CALayerDelegateP", "addSubview"]
+- !private ["So15CALayerDelegateP", "alpha"]
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "sendSubview"]
+- ["SC6CGRectV", "init"]
+- ["s7CVarArgP", "CGRect"]
+- !private ["s7CVarArgP", "UIColor"]
+- !private ["s7CVarArgP", "UIImage"]
+- ["s7CVarArgP", "UIView"]
+- !private ["s7CVarArgP", "addSubview"]
+- !private ["s7CVarArgP", "alpha"]
+- !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "didReceiveMemoryWarning"]
-- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "receivedView"]
+- !private ["s7CVarArgP", "sendSubview"]
+- !private ["s7CVarArgP", "sentView"]
+- !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", "CGRect"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- ["s28CustomDebugStringConvertibleP", "UIView"]
+- !private ["s28CustomDebugStringConvertibleP", "addSubview"]
+- !private ["s28CustomDebugStringConvertibleP", "alpha"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "receivedView"]
+- !private ["s28CustomDebugStringConvertibleP", "sendSubview"]
+- !private ["s28CustomDebugStringConvertibleP", "sentView"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "CGRect"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
+- !private ["s23CustomStringConvertibleP", "UIImage"]
+- ["s23CustomStringConvertibleP", "UIView"]
+- !private ["s23CustomStringConvertibleP", "addSubview"]
+- !private ["s23CustomStringConvertibleP", "alpha"]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "receivedView"]
+- !private ["s23CustomStringConvertibleP", "sendSubview"]
+- !private ["s23CustomStringConvertibleP", "sentView"]
+- !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", ""]
+- ["s9DecodableP", "init"]
+- ["s9EncodableP", "init"]
+- ["s9EquatableP", "CGRect"]
+- !private ["s9EquatableP", "UIColor"]
+- !private ["s9EquatableP", "UIImage"]
+- ["s9EquatableP", "UIView"]
+- !private ["s9EquatableP", "addSubview"]
+- !private ["s9EquatableP", "alpha"]
+- !private ["s9EquatableP", "backgroundColor"]
 - !private ["s9EquatableP", "didReceiveMemoryWarning"]
-- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "receivedView"]
+- !private ["s9EquatableP", "sendSubview"]
+- !private ["s9EquatableP", "sentView"]
+- !private ["s9EquatableP", "view"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", ""]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", "CGRect"]
+- !private ["s8HashableP", "UIColor"]
+- !private ["s8HashableP", "UIImage"]
+- ["s8HashableP", "UIView"]
+- !private ["s8HashableP", "addSubview"]
+- !private ["s8HashableP", "alpha"]
+- !private ["s8HashableP", "backgroundColor"]
 - !private ["s8HashableP", "didReceiveMemoryWarning"]
-- !private ["s8HashableP", "init"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "receivedView"]
+- !private ["s8HashableP", "sendSubview"]
+- !private ["s8HashableP", "sentView"]
+- !private ["s8HashableP", "view"]
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", ""]
+- !private ["12IndoorwaySdk0A17JSONInitializableP", "init"]
+- !private ["10SwiftyJSON17JSONSubscriptTypeP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- ["So8NSCodingP", "CGRect"]
+- !private ["So8NSCodingP", "UIColor"]
+- !private ["So8NSCodingP", "UIImage"]
+- ["So8NSCodingP", "UIView"]
+- !private ["So8NSCodingP", "addSubview"]
+- !private ["So8NSCodingP", "alpha"]
+- !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
-- !private ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "receivedView"]
+- !private ["So8NSCodingP", "sendSubview"]
+- !private ["So8NSCodingP", "sentView"]
+- !private ["So8NSCodingP", "view"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "init"]
+- ["So26NSExtensionRequestHandlingP", "CGRect"]
+- !private ["So26NSExtensionRequestHandlingP", "UIColor"]
+- !private ["So26NSExtensionRequestHandlingP", "UIImage"]
+- ["So26NSExtensionRequestHandlingP", "UIView"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "receivedView"]
+- !private ["So26NSExtensionRequestHandlingP", "sentView"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "CGRect"]
+- ["So8NSObjectC", "UIButton"]
+- !private ["So8NSObjectC", "UIColor"]
+- !private ["So8NSObjectC", "UIImage"]
+- ["So8NSObjectC", "UIView"]
+- !private ["So8NSObjectC", "addSubview"]
+- !private ["So8NSObjectC", "alpha"]
+- !private ["So8NSObjectC", "backgroundColor"]
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
 - ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "receivedButton"]
+- ["So8NSObjectC", "receivedView"]
+- !private ["So8NSObjectC", "sendSubview"]
+- ["So8NSObjectC", "sentButton"]
+- ["So8NSObjectC", "sentView"]
+- ["So8NSObjectC", "setupViews"]
+- !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidLoad"]
+- ["So16NSObjectProtocolP", "CGRect"]
+- !private ["So16NSObjectProtocolP", "UIColor"]
+- !private ["So16NSObjectProtocolP", "UIImage"]
+- ["So16NSObjectProtocolP", "UIView"]
+- !private ["So16NSObjectProtocolP", "addSubview"]
+- !private ["So16NSObjectProtocolP", "alpha"]
+- !private ["So16NSObjectProtocolP", "backgroundColor"]
 - !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
-- !private ["So16NSObjectProtocolP", "init"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "receivedView"]
+- !private ["So16NSObjectProtocolP", "sendSubview"]
+- !private ["So16NSObjectProtocolP", "sentView"]
+- !private ["So16NSObjectProtocolP", "view"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- ["18CampusAppChallenge18NewsViewControllerC", "CGRect"]
+- ["18CampusAppChallenge18NewsViewControllerC", "UIButton"]
+- !private ["18CampusAppChallenge18NewsViewControllerC", "UIColor"]
+- !private ["18CampusAppChallenge18NewsViewControllerC", "UIImage"]
+- ["18CampusAppChallenge18NewsViewControllerC", "UIView"]
 - ["18CampusAppChallenge18NewsViewControllerC", "deinit"]
 - ["18CampusAppChallenge18NewsViewControllerC", "didReceiveMemoryWarning"]
 - ["18CampusAppChallenge18NewsViewControllerC", "init"]
+- ["18CampusAppChallenge18NewsViewControllerC", "receivedButton"]
+- ["18CampusAppChallenge18NewsViewControllerC", "receivedView"]
+- ["18CampusAppChallenge18NewsViewControllerC", "sentButton"]
+- ["18CampusAppChallenge18NewsViewControllerC", "sentView"]
+- ["18CampusAppChallenge18NewsViewControllerC", "setupViews"]
+- !private ["18CampusAppChallenge18NewsViewControllerC", "view"]
 - ["18CampusAppChallenge18NewsViewControllerC", "viewDidLoad"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "addSubview"]
+- !private ["So29UIAccessibilityIdentificationP", "alpha"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "sendSubview"]
+- !private ["So12UIAppearanceP", "addSubview"]
+- !private ["So12UIAppearanceP", "alpha"]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "sendSubview"]
+- ["So21UIAppearanceContainerP", "CGRect"]
+- !private ["So21UIAppearanceContainerP", "UIColor"]
+- !private ["So21UIAppearanceContainerP", "UIImage"]
+- ["So21UIAppearanceContainerP", "UIView"]
+- !private ["So21UIAppearanceContainerP", "addSubview"]
+- !private ["So21UIAppearanceContainerP", "alpha"]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
-- !private ["So21UIAppearanceContainerP", "init"]
+- ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "receivedView"]
+- !private ["So21UIAppearanceContainerP", "sendSubview"]
+- !private ["So21UIAppearanceContainerP", "sentView"]
+- !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", ""]
+- ["So7UIColorC", "init"]
+- ["So18UIContentContainerP", "CGRect"]
+- !private ["So18UIContentContainerP", "UIColor"]
+- !private ["So18UIContentContainerP", "UIImage"]
+- ["So18UIContentContainerP", "UIView"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "receivedView"]
+- !private ["So18UIContentContainerP", "sentView"]
+- !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", ""]
+- !private ["So17UICoordinateSpaceP", "addSubview"]
+- !private ["So17UICoordinateSpaceP", "alpha"]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "sendSubview"]
+- !private ["So13UIDynamicItemP", "addSubview"]
+- !private ["So13UIDynamicItemP", "alpha"]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "sendSubview"]
+- ["So18UIFocusEnvironmentP", "CGRect"]
+- !private ["So18UIFocusEnvironmentP", "UIColor"]
+- !private ["So18UIFocusEnvironmentP", "UIImage"]
+- ["So18UIFocusEnvironmentP", "UIView"]
+- !private ["So18UIFocusEnvironmentP", "addSubview"]
+- !private ["So18UIFocusEnvironmentP", "alpha"]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
-- !private ["So18UIFocusEnvironmentP", "init"]
+- ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "receivedView"]
+- !private ["So18UIFocusEnvironmentP", "sendSubview"]
+- !private ["So18UIFocusEnvironmentP", "sentView"]
+- !private ["So18UIFocusEnvironmentP", "view"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "addSubview"]
+- !private ["So11UIFocusItemP", "alpha"]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "sendSubview"]
+- ["So7UIImageC", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "CGRect"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- ["So30UIPasteConfigurationSupportingP", "UIView"]
+- !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
+- !private ["So30UIPasteConfigurationSupportingP", "alpha"]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
-- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "receivedView"]
+- !private ["So30UIPasteConfigurationSupportingP", "sendSubview"]
+- !private ["So30UIPasteConfigurationSupportingP", "sentView"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "CGRect"]
+- ["So11UIResponderC", "UIButton"]
+- !private ["So11UIResponderC", "UIColor"]
+- !private ["So11UIResponderC", "UIImage"]
+- ["So11UIResponderC", "UIView"]
+- !private ["So11UIResponderC", "addSubview"]
+- !private ["So11UIResponderC", "alpha"]
+- !private ["So11UIResponderC", "backgroundColor"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
 - ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "receivedButton"]
+- ["So11UIResponderC", "receivedView"]
+- !private ["So11UIResponderC", "sendSubview"]
+- ["So11UIResponderC", "sentButton"]
+- ["So11UIResponderC", "sentView"]
+- ["So11UIResponderC", "setupViews"]
+- !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", "CGRect"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- ["So30UIResponderStandardEditActionsP", "UIView"]
+- !private ["So30UIResponderStandardEditActionsP", "addSubview"]
+- !private ["So30UIResponderStandardEditActionsP", "alpha"]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
-- !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "receivedView"]
+- !private ["So30UIResponderStandardEditActionsP", "sendSubview"]
+- !private ["So30UIResponderStandardEditActionsP", "sentView"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- ["So16UIStateRestoringP", "CGRect"]
+- !private ["So16UIStateRestoringP", "UIColor"]
+- !private ["So16UIStateRestoringP", "UIImage"]
+- ["So16UIStateRestoringP", "UIView"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "receivedView"]
+- !private ["So16UIStateRestoringP", "sentView"]
+- !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", ""]
+- ["So18UITraitEnvironmentP", "CGRect"]
+- !private ["So18UITraitEnvironmentP", "UIColor"]
+- !private ["So18UITraitEnvironmentP", "UIImage"]
+- ["So18UITraitEnvironmentP", "UIView"]
+- !private ["So18UITraitEnvironmentP", "addSubview"]
+- !private ["So18UITraitEnvironmentP", "alpha"]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
-- !private ["So18UITraitEnvironmentP", "init"]
+- ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "receivedView"]
+- !private ["So18UITraitEnvironmentP", "sendSubview"]
+- !private ["So18UITraitEnvironmentP", "sentView"]
+- !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "addSubview"]
+- !private ["So6UIViewC", "alpha"]
+- !private ["So6UIViewC", "backgroundColor"]
+- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "sendSubview"]
+- ["So16UIViewControllerC", "CGRect"]
+- ["So16UIViewControllerC", "UIButton"]
+- !private ["So16UIViewControllerC", "UIColor"]
+- !private ["So16UIViewControllerC", "UIImage"]
+- ["So16UIViewControllerC", "UIView"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "receivedButton"]
+- ["So16UIViewControllerC", "receivedView"]
+- ["So16UIViewControllerC", "sentButton"]
+- ["So16UIViewControllerC", "sentView"]
+- ["So16UIViewControllerC", "setupViews"]
+- !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", ""]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "alpha"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "sendSubview"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "alpha"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "receivedView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sendSubview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sentView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- "So15CALayerDelegateP"
+- "SC6CGRectV"
 - "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
 - "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "s8HashableP"
+- !private "12IndoorwaySdk0A17JSONInitializableP"
+- !private "10SwiftyJSON17JSONSubscriptTypeP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - "So8NSCodingP"
+- !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
 - "18CampusAppChallenge18NewsViewControllerC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- "So7UIColorC"
 - "So18UIContentContainerP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So7UIImageC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - "So16UIStateRestoringP"
 - "So18UITraitEnvironmentP"
+- "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "9Alamofire14URLConvertibleP"
+- !private "s23_BidirectionalIndexableP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -243,4 +607,4 @@ depends-external:
 - "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/OAuthSwift/OAuthSwift.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-interface-hash: "7b1d703b1e802bb0c19d399d7ac398ba"
+interface-hash: "850ca091905dc22e222b41f5d3a7cf95"

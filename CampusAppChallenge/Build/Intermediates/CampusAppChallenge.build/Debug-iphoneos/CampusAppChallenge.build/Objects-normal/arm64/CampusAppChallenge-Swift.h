@@ -298,6 +298,8 @@ SWIFT_CLASS("_TtC18CampusAppChallenge18HomeViewController")
 
 SWIFT_CLASS("_TtC18CampusAppChallenge18NewsViewController")
 @interface NewsViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified receivedButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified sentButton;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

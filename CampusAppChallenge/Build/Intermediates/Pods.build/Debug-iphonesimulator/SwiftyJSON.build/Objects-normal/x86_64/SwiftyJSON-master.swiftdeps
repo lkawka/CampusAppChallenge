@@ -1,5 +1,5 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "0929311a75cb25cb5c6071f027b25794"
-build_time: [1515871896, 306940000]
+build_time: [1515920811, 355735000]
 inputs:
   "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/SwiftyJSON/Source/SwiftyJSON.swift": [1515869736, 0]

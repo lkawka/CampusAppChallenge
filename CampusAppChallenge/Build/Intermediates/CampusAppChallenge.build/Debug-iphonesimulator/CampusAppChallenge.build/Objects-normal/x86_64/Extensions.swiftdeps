@@ -4,9 +4,14 @@ provides-nominal:
 provides-member:
 - ["10Foundation4DateV", ""]
 - ["10Foundation4DateV", "init"]
+- ["10Foundation4DateV", "timeToString"]
+- ["10Foundation4DateV", "dayToString"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "-"
+- !private "Array"
 - "AssignmentPrecedence"
+- !private "Calendar"
 - "CastingPrecedence"
 - "Date"
 - !private "DateFormatter"
@@ -15,104 +20,196 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 depends-member:
+- !private ["Sa", "subscript"]
 - !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
 - !private ["s7CVarArgP", "date"]
 - !private ["s7CVarArgP", "dateFormat"]
+- !private ["s7CVarArgP", "dateStyle"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "locale"]
+- !private ["s7CVarArgP", "string"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "timeStyle"]
+- !private ["10Foundation8CalendarV", "component"]
+- !private ["10Foundation8CalendarV", "current"]
 - !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "Calendar"]
 - !private ["s10ComparableP", "DateFormatter"]
 - !private ["s10ComparableP", "NSLocale"]
 - !private ["s10ComparableP", "init"]
+- !private ["10Foundation8CalendarV9ComponentO", "weekday"]
+- !private ["s28CustomDebugStringConvertibleP", "Calendar"]
 - !private ["s28CustomDebugStringConvertibleP", "DateFormatter"]
 - !private ["s28CustomDebugStringConvertibleP", "NSLocale"]
+- !private ["s28CustomDebugStringConvertibleP", "component"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
 - !private ["s28CustomDebugStringConvertibleP", "date"]
 - !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
+- !private ["s28CustomDebugStringConvertibleP", "dateStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "locale"]
+- !private ["s28CustomDebugStringConvertibleP", "string"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "timeStyle"]
+- !private ["s29CustomPlaygroundQuickLookableP", "Calendar"]
 - !private ["s29CustomPlaygroundQuickLookableP", "DateFormatter"]
 - !private ["s29CustomPlaygroundQuickLookableP", "NSLocale"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "Calendar"]
 - !private ["s17CustomReflectableP", "DateFormatter"]
 - !private ["s17CustomReflectableP", "NSLocale"]
+- !private ["s17CustomReflectableP", "component"]
+- !private ["s17CustomReflectableP", "current"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "Calendar"]
 - !private ["s23CustomStringConvertibleP", "DateFormatter"]
 - !private ["s23CustomStringConvertibleP", "NSLocale"]
+- !private ["s23CustomStringConvertibleP", "component"]
+- !private ["s23CustomStringConvertibleP", "current"]
 - !private ["s23CustomStringConvertibleP", "date"]
 - !private ["s23CustomStringConvertibleP", "dateFormat"]
+- !private ["s23CustomStringConvertibleP", "dateStyle"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "locale"]
+- !private ["s23CustomStringConvertibleP", "string"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "timeStyle"]
+- !private ["10Foundation4DateV", "Calendar"]
 - !private ["10Foundation4DateV", "DateFormatter"]
 - !private ["10Foundation4DateV", "Locale"]
 - !private ["10Foundation4DateV", "NSLocale"]
 - ["10Foundation4DateV", "String"]
+- ["10Foundation4DateV", "dayToString"]
 - ["10Foundation4DateV", "init"]
+- ["10Foundation4DateV", "timeToString"]
 - !private ["So13DateFormatterC", "date"]
 - !private ["So13DateFormatterC", "dateFormat"]
+- !private ["So13DateFormatterC", "dateStyle"]
 - !private ["So13DateFormatterC", "init"]
 - !private ["So13DateFormatterC", "locale"]
+- !private ["So13DateFormatterC", "string"]
+- !private ["So13DateFormatterC", "timeStyle"]
+- !private ["s9DecodableP", "Calendar"]
 - !private ["s9DecodableP", "DateFormatter"]
 - !private ["s9DecodableP", "NSLocale"]
+- !private ["s9DecodableP", "component"]
+- !private ["s9DecodableP", "current"]
 - !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9EncodableP", "Calendar"]
 - !private ["s9EncodableP", "DateFormatter"]
 - !private ["s9EncodableP", "NSLocale"]
+- !private ["s9EncodableP", "component"]
+- !private ["s9EncodableP", "current"]
 - !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "Calendar"]
 - !private ["s9EquatableP", "DateFormatter"]
 - !private ["s9EquatableP", "NSLocale"]
+- !private ["s9EquatableP", "component"]
+- !private ["s9EquatableP", "current"]
 - !private ["s9EquatableP", "date"]
 - !private ["s9EquatableP", "dateFormat"]
+- !private ["s9EquatableP", "dateStyle"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "locale"]
+- !private ["s9EquatableP", "none"]
+- !private ["s9EquatableP", "short"]
+- !private ["s9EquatableP", "string"]
+- !private ["s9EquatableP", "timeStyle"]
+- !private ["s9EquatableP", "weekday"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["So9FormatterC", "date"]
 - !private ["So9FormatterC", "dateFormat"]
+- !private ["So9FormatterC", "dateStyle"]
 - !private ["So9FormatterC", "init"]
 - !private ["So9FormatterC", "locale"]
+- !private ["So9FormatterC", "string"]
+- !private ["So9FormatterC", "timeStyle"]
+- !private ["s8HashableP", "Calendar"]
 - !private ["s8HashableP", "DateFormatter"]
 - !private ["s8HashableP", "NSLocale"]
+- !private ["s8HashableP", "component"]
+- !private ["s8HashableP", "current"]
 - !private ["s8HashableP", "date"]
 - !private ["s8HashableP", "dateFormat"]
+- !private ["s8HashableP", "dateStyle"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "locale"]
+- !private ["s8HashableP", "none"]
+- !private ["s8HashableP", "short"]
+- !private ["s8HashableP", "string"]
+- !private ["s8HashableP", "timeStyle"]
+- !private ["s8HashableP", "weekday"]
 - !private ["12IndoorwaySdk0A17JSONInitializableP", "init"]
 - !private ["10SwiftyJSON17JSONSubscriptTypeP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "subscript"]
 - !private ["So8NSCodingP", "date"]
 - !private ["So8NSCodingP", "dateFormat"]
+- !private ["So8NSCodingP", "dateStyle"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "locale"]
+- !private ["So8NSCodingP", "string"]
+- !private ["So8NSCodingP", "timeStyle"]
 - !private ["So9NSCopyingP", "date"]
 - !private ["So9NSCopyingP", "dateFormat"]
+- !private ["So9NSCopyingP", "dateStyle"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "locale"]
+- !private ["So9NSCopyingP", "string"]
+- !private ["So9NSCopyingP", "timeStyle"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So8NSLocaleC", "init"]
 - !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "date"]
 - !private ["So8NSObjectC", "dateFormat"]
+- !private ["So8NSObjectC", "dateStyle"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "locale"]
+- !private ["So8NSObjectC", "string"]
+- !private ["So8NSObjectC", "timeStyle"]
 - !private ["So16NSObjectProtocolP", "date"]
 - !private ["So16NSObjectProtocolP", "dateFormat"]
+- !private ["So16NSObjectProtocolP", "dateStyle"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "locale"]
+- !private ["So16NSObjectProtocolP", "string"]
+- !private ["So16NSObjectProtocolP", "timeStyle"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["s16RawRepresentableP", "none"]
+- !private ["s16RawRepresentableP", "short"]
+- !private ["10Foundation20ReferenceConvertibleP", "Calendar"]
 - !private ["10Foundation20ReferenceConvertibleP", "DateFormatter"]
 - !private ["10Foundation20ReferenceConvertibleP", "NSLocale"]
+- !private ["10Foundation20ReferenceConvertibleP", "component"]
+- !private ["10Foundation20ReferenceConvertibleP", "current"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
+- !private ["So13DateFormatterC5StyleO", "none"]
+- !private ["So13DateFormatterC5StyleO", "short"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -120,21 +217,38 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "subscript"]
 - !private ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "date"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locale"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "timeStyle"]
+- !private ["10Foundation14_MutableBoxingP", "component"]
+- !private ["10Foundation14_MutableBoxingP", "current"]
+- !private ["s17_MutableIndexableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "Calendar"]
 - !private ["s21_ObjectiveCBridgeableP", "DateFormatter"]
 - !private ["s21_ObjectiveCBridgeableP", "NSLocale"]
+- !private ["s21_ObjectiveCBridgeableP", "component"]
+- !private ["s21_ObjectiveCBridgeableP", "current"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "subscript"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- !private "Sa"
 - !private "s23BidirectionalCollectionP"
 - !private "s7CVarArgP"
+- !private "10Foundation8CalendarV"
 - !private "s10CollectionP"
 - !private "s10ComparableP"
+- !private "10Foundation8CalendarV9ComponentO"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
@@ -144,6 +258,7 @@ depends-nominal:
 - !private "s9DecodableP"
 - !private "s9EncodableP"
 - !private "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
@@ -153,6 +268,7 @@ depends-nominal:
 - !private "10SwiftyJSON17JSONSubscriptTypeP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -163,15 +279,20 @@ depends-nominal:
 - !private "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
+- !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "s8SequenceP"
 - !private "SS"
 - !private "s14StringProtocolP"
+- !private "So13DateFormatterC5StyleO"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "9Alamofire14URLConvertibleP"
+- !private "s14_ArrayProtocolP"
 - !private "s23_BidirectionalIndexableP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
@@ -181,7 +302,10 @@ depends-nominal:
 - !private "s10_IndexableP"
 - !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation14_MutableBoxingP"
+- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
 - !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
@@ -316,4 +440,4 @@ depends-external:
 - "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphonesimulator/OAuthSwift/OAuthSwift.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-interface-hash: "38fa4b6f1855359dddab62f382d4e2f3"
+interface-hash: "33e678cc41a0ae272bf2d1dafcc485aa"

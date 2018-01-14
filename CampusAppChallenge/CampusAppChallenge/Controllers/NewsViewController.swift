@@ -10,9 +10,13 @@ import UIKit
 
 class NewsViewController: UIViewController {
 
+    @IBOutlet weak var receivedButton: UIButton!
+    @IBOutlet weak var sentButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //setupViews()
         // Do any additional setup after loading the view.
     }
 
@@ -20,7 +24,17 @@ class NewsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+//    func setupViews() {
+//        self.view.addSubview(receivedView)
+//        receivedView.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "News1"))
+//        self.view.sendSubview(toBack: receivedView)
+//        
+//        self.view.addSubview(sentView)
+//        sentView.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "News2"))
+//        sentView.alpha = 0
+//        self.view.sendSubview(toBack: sentView)
+//    }
 
     /*
     // MARK: - Navigation
