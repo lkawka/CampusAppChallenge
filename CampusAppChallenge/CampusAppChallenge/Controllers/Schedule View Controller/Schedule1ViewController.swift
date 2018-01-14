@@ -1,15 +1,17 @@
 //
-//  DayViewController.swift
+//  Schedule1ViewController.swift
 //  CampusAppChallenge
 //
-//  Created by Kornel on 14/01/2018.
+//  Created by Lukasz Kawka on 14/01/2018.
 //  Copyright © 2018 Lukasz Kawka. All rights reserved.
 //
 
 import UIKit
 
-class DayViewController: UIViewController {
+class Schedule1ViewController: UIViewController {
 
+    @IBOutlet weak var TransitionButton: UIButton!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
