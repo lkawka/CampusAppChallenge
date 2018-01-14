@@ -258,4 +258,4 @@ depends-external:
 - "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Modules/module.modulemap"
 - "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Modules/module.modulemap"
 - "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/OAuthSwift/OAuthSwift.framework/Modules/module.modulemap"
-interface-hash: "04d9e0eb3431c3ca515c5bca4c8049a5"
+interface-hash: "b702a6d1be171e88952113de12fd2199"
