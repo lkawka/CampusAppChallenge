@@ -22,6 +22,8 @@ struct Lecturer: Personable {
     
     var title: TitleType? = nil
     
+    var fullName: String
+    
     init(firstName: String, secondName: String?, surname: String, title: TitleType?) {
         self.firstName = firstName
         self.surname = surname
@@ -29,6 +31,10 @@ struct Lecturer: Personable {
         if let second = secondName, let titleTp = title {
             self.secondName = second
             self.title = titleTp
+            
+            fullName = "\(firstName) \(second) \(surname)"
+        } else {
+            fullName = "\(firstName) \(surname)"
         }
     }
 }

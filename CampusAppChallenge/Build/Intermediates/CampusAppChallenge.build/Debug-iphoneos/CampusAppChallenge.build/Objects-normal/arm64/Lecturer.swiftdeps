@@ -17,6 +17,7 @@ depends-top-level:
 - "String"
 - "StringLiteralType"
 - "TitleType"
+- !private "UnicodeScalarType"
 - !private "~="
 depends-member:
 - ["s23BidirectionalCollectionP", "init"]
@@ -69,6 +70,7 @@ depends-member:
 - ["18CampusAppChallenge8LecturerV", "TitleType"]
 - ["18CampusAppChallenge8LecturerV", "deinit"]
 - ["18CampusAppChallenge8LecturerV", "firstName"]
+- ["18CampusAppChallenge8LecturerV", "fullName"]
 - ["18CampusAppChallenge8LecturerV", "init"]
 - ["18CampusAppChallenge8LecturerV", "secondName"]
 - ["18CampusAppChallenge8LecturerV", "surname"]
@@ -88,6 +90,7 @@ depends-member:
 - ["So8NSStringC", "init"]
 - !private ["s7NumericP", "hashValue"]
 - ["18CampusAppChallenge10PersonableP", "firstName"]
+- !private ["18CampusAppChallenge10PersonableP", "fullName"]
 - ["18CampusAppChallenge10PersonableP", "secondName"]
 - ["18CampusAppChallenge10PersonableP", "surname"]
 - !private ["18CampusAppChallenge10PersonableP", "title"]
@@ -331,4 +334,4 @@ depends-external:
 - "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/AWSCore/AWSCore.framework/Modules/module.modulemap"
 - "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Pods/IndoorwaySdk/IndoorwaySdk/IndoorwaySdk.framework/Modules/module.modulemap"
 - "/Users/Rafal/Desktop/CampusAppChallenge/CampusAppChallenge/Build/Products/Debug-iphoneos/OAuthSwift/OAuthSwift.framework/Modules/module.modulemap"
-interface-hash: "18dcbfe9a72a6d020e5f1b4efdaf9fda"
+interface-hash: "31a11684c6b7d900756fd0efeddaf5bd"

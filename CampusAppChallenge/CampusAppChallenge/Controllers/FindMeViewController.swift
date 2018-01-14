@@ -22,6 +22,10 @@ class FindMeViewController: UIViewController, UISearchBarDelegate, UITableViewDa
         Lecturer(firstName: "Aleksandra", secondName: "Anna", surname: "Ciołkosz", title: .dr)
     ]
     
+    var filteredLecturers: [Lecturer] = []
+    
+    var isSearching = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +38,8 @@ class FindMeViewController: UIViewController, UISearchBarDelegate, UITableViewDa
         
         tableView.dataSource = self
         searchBar.delegate = self
+        
+        searchBar.returnKeyType = UIReturnKeyType.done
         
         tableView.sendSubview(toBack: self.view)
         tableView.center.y -= 700
@@ -50,29 +56,59 @@ class FindMeViewController: UIViewController, UISearchBarDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isSearching {
+            return filteredLecturers.count
+        }
+        
         return lecturers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "plainCell")!
         
-        var title: String = ""
-        let firstName: String = lecturers[indexPath.row].firstName
-        var secondName: String = ""
-        let surname: String = lecturers[indexPath.row].surname
+        if isSearching {
+            var title: String = ""
+            let firstName: String = filteredLecturers[indexPath.row].firstName
+            var secondName: String = ""
+            let surname: String = filteredLecturers[indexPath.row].surname
+            
+            if let second = filteredLecturers[indexPath.row].secondName { secondName = second }
+            if let titleT = filteredLecturers[indexPath.row].title?.rawValue { title = titleT }
+            
+            cell.textLabel?.text = "\(title) \(firstName) \(secondName) \(surname)"
+            
+            return cell
+        } else {
+            var title: String = ""
+            let firstName: String = lecturers[indexPath.row].firstName
+            var secondName: String = ""
+            let surname: String = lecturers[indexPath.row].surname
         
-        if let second = lecturers[indexPath.row].secondName { secondName = second }
-        if let titleT = lecturers[indexPath.row].title?.rawValue { title = titleT }
+            if let second = lecturers[indexPath.row].secondName { secondName = second }
+            if let titleT = lecturers[indexPath.row].title?.rawValue { title = titleT }
     
-        cell.textLabel?.text = "\(title) \(firstName) \(secondName) \(surname)"
+            cell.textLabel?.text = "\(title) \(firstName) \(secondName) \(surname)"
     
-        return cell
+            return cell
+        }
     }
     
     //MARK:- SearchBar Functions
+    
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         searchBar.showsCancelButton = true
-        tableView.center.y += 700
+        //tableView.center.y += 700
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if tableView.center.y > 120 && (searchBar.text?.isEmpty)! {
+            tableView.center.y -= 700
+        }
+        else if tableView.center.y < 120 {
+            tableView.center.y += 700
+        }
+        
+        updateSearchResults()
     }
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
@@ -84,4 +120,24 @@ class FindMeViewController: UIViewController, UISearchBarDelegate, UITableViewDa
         searchBar.endEditing(true)
     }
     
+    func updateSearchResults() {
+        if self.searchBar.text! == "" {
+            filteredLecturers = lecturers
+            tableView.reloadData()
+        } else {
+            filteredLecturers = lecturers.filter { $0.fullName.contains(searchBar.text!) }
+            tableView.reloadData()
+        }
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
