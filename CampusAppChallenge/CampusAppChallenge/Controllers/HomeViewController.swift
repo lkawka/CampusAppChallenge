@@ -26,7 +26,11 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var modalViewHeight: NSLayoutConstraint!
     @IBOutlet var swipeGestureRecognizer: UISwipeGestureRecognizer!
     
-    
+    @IBOutlet weak var modalViewSwipeInfoLabel: UILabel!
+    @IBOutlet weak var modalViewClassNameLabel: UILabel!
+    @IBOutlet weak var modalViewRoomNumberLabel: UILabel!
+    @IBOutlet weak var modalViewLecturerNameLabel: UILabel!
+    @IBOutlet weak var modalViewLinkButton: UIButton!
     
     var mapView: IndoorwayMapView!
     
@@ -100,7 +104,7 @@ class HomeViewController: UIViewController {
     //MARK: - Setup
     
     private func setupHeaderView() {
-        if let event = event {
+        if event != nil {
             headerView.isHidden = false
             
             
@@ -193,9 +197,10 @@ class HomeViewController: UIViewController {
     
     //MARK: - Handling gesture recognizers
     
-    
     @IBAction func swipeUp(_ sender: Any) {
-        modalViewHeight.constant = 400
+        modalViewHeight.constant = 160
+        
+        modalViewSwipeInfoLabel.text = "Swipe down for less"
     }
     
     @IBAction func swipeDown(_ sender: Any) {
@@ -203,6 +208,14 @@ class HomeViewController: UIViewController {
             modalView.isHidden = true
         } else {
             modalViewHeight.constant = 75
+            
+            modalViewSwipeInfoLabel.text = "Swipe up for class resources or down to dismiss"
+        }
+    }
+    
+    @IBAction func modelViewLinkButtonTapped(_ sender: Any) {
+        if let link = modalViewLinkButton.titleLabel!.text {
+            UIApplication.shared.open(URL(string: link)!)
         }
     }
     
@@ -211,27 +224,12 @@ class HomeViewController: UIViewController {
 //MARK: - Indoorway Map Delegate
 
 extension HomeViewController: IndoorwayMapViewDelegate {
-    /*func mapViewDidFinishLoadingMap(_ mapView: IndoorwayMapView) {
-        print("Map view did finish loading")
-    }*/
     func mapViewDidFailLoadingMap(_ mapView: IndoorwayMapView, withError error: Error) {
         print("Map view did fail loading map with error: \(error.localizedDescription)")
     }
     
     func mapView(_ mapView: IndoorwayMapView, shouldSelectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) -> Bool {
         return false
-    }
-    
-    func mapView(_ mapView: IndoorwayMapView, didSelectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
-        print("User did select indoor object with identifier: \(indoorObjectInfo.objectId)")
-        //indoorObjectInfo.
-     }
-    func mapView(_ mapView: IndoorwayMapView, didDeselectIndoorObject indoorObjectInfo: IndoorwayObjectInfo) {
-        print("User did deselect indoor object with identifier: \(indoorObjectInfo.objectId)")
-    }
-    
-    func mapView(_ mapView: IndoorwayMapView, didTapLocation location: IndoorwayLatLon) {
-        print("User did tap location: \(location.latitude) \(location.longitude)")
     }
 }
 
@@ -332,6 +330,11 @@ extension HomeViewController: ProximityDelegate {
         
         for event in Schedule().events {
             if event.roomNumber == roomNumber {
+                modalViewClassNameLabel.text = event.eventName
+                modalViewRoomNumberLabel.text = "room: \(event.roomNumber)"
+                modalViewLecturerNameLabel.text = event.lecturer
+                modalViewLinkButton.setTitle(event.lecturerWebpage, for: .normal)
+                
                 
                 break
             }

@@ -136,9 +136,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66p-Tu-fZa">
-                                <rect key="frame" x="0.0" y="543" width="375" height="75"/>
+                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="66p-Tu-fZa">
+                                <rect key="frame" x="0.0" y="460" width="375" height="158"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up for class resources or down to dismiss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6I-WF-wsk">
+                                        <rect key="frame" x="51.5" y="5" width="272" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LinearAlgebra" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5T8-Io-uq3">
                                         <rect key="frame" x="10" y="28" width="166" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
@@ -146,7 +152,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="room: 213" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkJ-nO-Q3N">
-                                        <rect key="frame" x="12" y="49" width="69" height="18"/>
+                                        <rect key="frame" x="12" y="47.5" width="69" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -157,24 +163,36 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to show class resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6I-WF-wsk">
-                                        <rect key="frame" x="85" y="5" width="204.5" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here you have all of mine lecture notes:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0F-IT-emp">
+                                        <rect key="frame" x="10" y="85.5" width="309" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3r-0e-dTJ">
+                                        <rect key="frame" x="10" y="114.5" width="355" height="30"/>
+                                        <state key="normal" title="www.example.com/lecturer/resources"/>
+                                        <connections>
+                                            <action selector="modelViewLinkButtonTapped:" destination="ykn-dj-hJS" eventType="touchUpInside" id="W86-W3-Yj6"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="5T8-Io-uq3" firstAttribute="top" secondItem="b6I-WF-wsk" secondAttribute="bottom" constant="7" id="0xy-Rh-m6w"/>
+                                    <constraint firstItem="W0F-IT-emp" firstAttribute="leading" secondItem="66p-Tu-fZa" secondAttribute="leading" constant="10" id="5hj-F4-X4u"/>
                                     <constraint firstItem="YkJ-nO-Q3N" firstAttribute="top" secondItem="5T8-Io-uq3" secondAttribute="bottom" constant="3" id="7ag-4X-MsO"/>
                                     <constraint firstItem="b6I-WF-wsk" firstAttribute="top" secondItem="66p-Tu-fZa" secondAttribute="top" constant="5" id="Dht-P0-JqE"/>
                                     <constraint firstAttribute="trailing" secondItem="CT0-Hv-ZV0" secondAttribute="trailing" constant="10" id="JG8-ww-bfE"/>
+                                    <constraint firstAttribute="trailing" secondItem="q3r-0e-dTJ" secondAttribute="trailing" constant="10" id="Q3G-FT-tsx"/>
                                     <constraint firstItem="YkJ-nO-Q3N" firstAttribute="leading" secondItem="66p-Tu-fZa" secondAttribute="leading" constant="12" id="YfO-my-NDa"/>
                                     <constraint firstAttribute="height" constant="75" id="dt4-u7-2hR"/>
                                     <constraint firstItem="5T8-Io-uq3" firstAttribute="leading" secondItem="66p-Tu-fZa" secondAttribute="leading" constant="10" id="ewd-wD-waL"/>
                                     <constraint firstItem="CT0-Hv-ZV0" firstAttribute="top" secondItem="b6I-WF-wsk" secondAttribute="bottom" constant="18" id="gnd-FM-gis"/>
                                     <constraint firstItem="b6I-WF-wsk" firstAttribute="centerX" secondItem="66p-Tu-fZa" secondAttribute="centerX" id="hk2-xl-j5m"/>
+                                    <constraint firstItem="q3r-0e-dTJ" firstAttribute="top" secondItem="W0F-IT-emp" secondAttribute="bottom" constant="8" id="qZ5-Ui-IjI"/>
+                                    <constraint firstItem="W0F-IT-emp" firstAttribute="top" secondItem="YkJ-nO-Q3N" secondAttribute="bottom" constant="20" id="tQW-Jr-DDX"/>
+                                    <constraint firstItem="q3r-0e-dTJ" firstAttribute="leading" secondItem="66p-Tu-fZa" secondAttribute="leading" constant="10" id="ul2-fk-ukO"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -210,7 +228,12 @@
                         <outlet property="dayLabel" destination="m3G-lm-ivT" id="FSx-do-9dh"/>
                         <outlet property="headerView" destination="a1v-o9-klg" id="G1l-nA-qQB"/>
                         <outlet property="modalView" destination="66p-Tu-fZa" id="ilS-Id-JKA"/>
+                        <outlet property="modalViewClassNameLabel" destination="5T8-Io-uq3" id="cbS-Ah-lTo"/>
                         <outlet property="modalViewHeight" destination="dt4-u7-2hR" id="ZGe-F0-SUg"/>
+                        <outlet property="modalViewLecturerNameLabel" destination="CT0-Hv-ZV0" id="4kV-XY-xAv"/>
+                        <outlet property="modalViewLinkButton" destination="q3r-0e-dTJ" id="7BY-M4-gjE"/>
+                        <outlet property="modalViewRoomNumberLabel" destination="YkJ-nO-Q3N" id="X7b-vS-r61"/>
+                        <outlet property="modalViewSwipeInfoLabel" destination="b6I-WF-wsk" id="nx1-pa-rRn"/>
                         <outlet property="navigateButton" destination="zD1-VO-u0v" id="qFG-Ac-ZKy"/>
                         <outlet property="roomNumberLabel" destination="Qzs-vI-w1q" id="IEj-4d-wrv"/>
                         <outlet property="swipeGestureRecognizer" destination="Es5-BG-K3B" id="us1-PP-BVW"/>

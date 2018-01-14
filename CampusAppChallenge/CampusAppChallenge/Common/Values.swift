@@ -26,7 +26,7 @@ class Value {
                                213: IndoorwayLocation(latitude: 52.2221342261612, longitude: 21.0067608066068, uncertainty: nil, buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor2),
                                214: IndoorwayLocation(latitude: 52.2222170251715, longitude: 21.0067752232291, uncertainty: nil, buildingUuid: Value.buildingUuid, mapUuid: Value.mapUuidFloor2)]
     
-    static var radious = 3.0
+    static var radious = 5.0
     
     static let roomEvent = [103: IndoorwayProximityEvent.onEnter(identifier: "103", triggerArea: IndoorwayProximityEventShape.circular(center: (Value.roomLocation[103])!, radius: Value.radious)),
                             107: IndoorwayProximityEvent.onEnter(identifier: "107", triggerArea: IndoorwayProximityEventShape.circular(center: (Value.roomLocation[107])!, radius: Value.radious)),
